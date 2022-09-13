@@ -5,3 +5,5 @@ git remote add origin https://github.com/AyushKumar-Codes/Coding.git
 git pull -u origin main
 git status (for checking status)
 git pull (For downloading Repositories)
+git add .(For adding Files)
+git add "WRITE FILE NAME" (For adding particular files)
