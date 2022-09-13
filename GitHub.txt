@@ -1,0 +1,7 @@
+git init
+git commit -m "WRITE THE NAME OF THE COMMIT"
+git branch -M main
+git remote add origin https://github.com/AyushKumar-Codes/Coding.git
+git pull -u origin main
+git status (for checking status)
+git pull (For downloading Repositories)
