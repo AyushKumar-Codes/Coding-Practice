@@ -1,9 +1,9 @@
 git init
+git add "WRITE FILE NAME" (For adding particular files)
+git add . (For adding Files)
 git commit -m "WRITE THE NAME OF THE COMMIT"
 git branch -M main
 git remote add origin https://github.com/AyushKumar-Codes/Coding.git
-git pull -u origin main
+git push -u origin main (For upload Flies)
 git status (for checking status)
 git pull (For downloading Repositories)
-git add .(For adding Files)
-git add "WRITE FILE NAME" (For adding particular files)
