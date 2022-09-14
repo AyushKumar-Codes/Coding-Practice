@@ -40,3 +40,13 @@ d=d+e
 e=d-e
 d=d-e
 print(d, e)
+
+#Swaping With multiplications and division
+
+s=20
+t=5
+s=s*t
+t=s//t
+s=s//t
+print(s)
+print(t)

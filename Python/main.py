@@ -4,8 +4,8 @@
 
 """ a = "python"
  b = "Programming"
- c = "Aditya"
- d = "Sumit"
+ c = "Ayush"
+ d = "Roanak"
  e = "Friends"
  print(a)
  print(b)
