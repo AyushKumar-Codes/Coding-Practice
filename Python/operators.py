@@ -105,7 +105,8 @@ import enum
  ####BITWISE OPERATORS
  # THESE are those opreators which works on bits of integer representation  .
 # Used in = Encryption , Compression , Embeedded system graphics Rasperry Pi , Competitive coding
-"""& (Bitwise and )
+"""
+& (Bitwise and )
 | (Bitwise or) or Inclusive
 ^ (Bitwise XOR ) or Exclusive 
 >> (Right Shift )
