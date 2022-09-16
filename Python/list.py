@@ -38,4 +38,5 @@ print(l6[2][4])
 print(l6[2][5])
 print(l6[2][6])
 print("Date of Birth of Employee is",l6[4][0],"\b-",l6[4][1],"\b-",l6[4][2])
-
+str="Python"
+print(list(str))

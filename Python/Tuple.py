@@ -6,3 +6,5 @@ t1=(1)
 print(type(t1))
 t1=(1,)
 print(type(t1))
+str="Python"
+print(tuple(str))

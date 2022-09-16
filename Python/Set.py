@@ -9,3 +9,5 @@ print(s1)#set is unordered so it print random
 s1={1,2,3,4,5,5,6}
 print(s1)
 print(type(s1))
+str="Python"
+print(set(str))

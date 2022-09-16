@@ -33,3 +33,4 @@ products["Prod2"]=np2
 products["Prod3"]=np3
 print("Prices are updated")
 print(products)
+
