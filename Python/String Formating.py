@@ -20,3 +20,4 @@ s="Hello"
 print("%10s"%s)
 print("%-10s Ayush"%s)
 print("%10.2s"%s)
+<0
