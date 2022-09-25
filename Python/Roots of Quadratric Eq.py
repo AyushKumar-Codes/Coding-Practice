@@ -6,7 +6,7 @@ d=(b**2-(4*a*c))
 s1=(-b-d**(1/2))/(2*a)
 s2=(-b+d**(1/2))/(2*a)
 if(d==0):
-    print("Root Does't Exit")
+    print("Roots are Identical So,Solution is",s1)
 elif(d>0):
     print("The Real solutions are {} and {}".format(s1,s2))
 elif(d<0):
