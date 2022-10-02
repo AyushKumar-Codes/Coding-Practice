@@ -33,4 +33,9 @@ products["Prod2"]=np2
 products["Prod3"]=np3
 print("Prices are updated")
 print(products)
-
+#How to add elements in Dictionary
+s=dict()
+x=input("State: ")
+y=input("Capital: ")
+s.update({x:y})
+print(sorted(s.items()))#sorted(s.items())) is use for printing keys in alphabetically order

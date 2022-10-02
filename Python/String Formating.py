@@ -2,6 +2,7 @@ x=int(input("X:"))
 y=float(input("Y:"))
 print("{:4}".format(x))#This Code For giving 4 spaces
 print("{0:.4f}".format(y))#This code is for printing upto 4 decimal places
+print("{:.4f}".format(y))#This code is for printing upto 4 decimal places (Speacially this works in Loops )
 name="Ayush"
 last="Kumar"
 print("Hello, %s" % name,"%s !"%last)

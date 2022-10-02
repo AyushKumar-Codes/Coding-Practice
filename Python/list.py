@@ -3,6 +3,8 @@ list is mutable data type means data can be changeable
 eg. x=[1,2,3,4]
 x.append(5) is use to add element at the end of the list.
 '''
+l1=[]#It is use for Empty List
+l1=list()#It is use for Empty List
 l1=[1,2,3]
 l2=["abc","pqr",1,3.14]
 print(l1)

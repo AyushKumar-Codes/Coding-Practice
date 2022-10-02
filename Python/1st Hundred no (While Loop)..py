@@ -1,4 +1,4 @@
-w=int(input())
+'''w=int(input())
 x=0
 while x<w:
     print(x+1)
@@ -36,16 +36,21 @@ while x<=n:
         print(x+1)
     x=x+1
 #Addition Operation Inside a Loop
-#print sum of all numbers till n numbers
+#print sum of all numbers till n numbers'''
 n=int(input("Num:"))
 i=1
 sum=0
-while i<=n:
-    sum=sum+i
-    i=i+1
+if n>0:
+    while i<=n:
+        sum=sum+i
+        i=i+1
+elif n<0:
+    while n<=0:
+        sum=sum+n
+        n=n+1
 print("sum:",sum)
 
-n=int(input("Num:"))
+'''n=int(input("Num:"))
 i=1
 sum=0
 while i<=n:
@@ -61,6 +66,6 @@ while i<=n:
     if(i%5==0):
         sum=sum*i
     i=i+1
-print("Product:",sum)
+print("Product:",sum)'''
 
 

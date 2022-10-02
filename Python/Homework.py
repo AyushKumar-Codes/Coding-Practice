@@ -66,3 +66,11 @@ number_sides = int(input("Input number of sides: "))
 side_length = float(input("Input the length of a side: "))
 p_area = number_sides * (side_length ** 2) / (4 * tan(pi / number_sides))
 print("The area of the polygon is: ",p_area)
+
+'''
+wap to display all palindromic numbers from  n to m
+wap to display reverse of all even numbers from n to m
+wap to display all perfect number from n to m
+wap to display all even list elements from the following list:
+list1=[[1,2,3],[4,5,6],[7,8,9]]
+'''
