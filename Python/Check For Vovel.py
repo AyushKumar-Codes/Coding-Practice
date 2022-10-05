@@ -1,22 +1,15 @@
 #String contain  vovel letter or not
-x=input("vowel or 0 for EXIT: ")
-a=0
-b=0
-c=0
+x=input("vowel or 9 for EXIT: ")
+vowels="aieouAEIOU"
 while True:
-    if x=="0":
-        break
-    for i in x:
-        if i=="a" or i=="e" or i=="i" or i=="o" or i=="u" or i=="A" or i=="I" or i=="O" or i=="U" or i=="E":
-            a=1
-        if i.isnumeric() and i!="9":
-            b=1
+    x=input("Vowel,or 9 to quit: ")
+    if x.isalpha() or x=="9":
+        if x=="9":
+            break
+        if x in vowels:
+            print("vowels")
         else:
-            c=1
-    if b==1 and:
-        print("Wrong Input")
-    if c==1 and a==0 and b==0:
-        print("String Does not contains Vovel")
-    if a==1 and b==0:
-        print("String contains Vovel")
-    x = input("vowel or 0 for EXIT: ")
+            print("not vowel")
+    else:
+        print("wrong input")
+        continue
