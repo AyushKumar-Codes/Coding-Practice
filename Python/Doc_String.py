@@ -1,3 +1,4 @@
+#First Line of the Function definition can be used as a comment
 def add(a,b):
     """
     Return sum of a given argument 

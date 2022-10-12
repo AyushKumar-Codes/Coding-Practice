@@ -1,4 +1,4 @@
-units=int(input("please enter the number of units you consumed in a month"))
+units=int(input("please enter the number of units you consumed in a month= "))
 if(units<=100):
     payAmount=units*1.5
     fixedcharge=25.00
