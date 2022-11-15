@@ -6,6 +6,7 @@ and we are learning data type'''
 print(x)
 #String Slicing
 s="Hello"
+#String indexing
 print(s[0])
 print(s[1])
 print(s[2])
@@ -39,3 +40,31 @@ print(str(a)[-1:])
 x="Hello"
 y="World"
 print(x+y)
+print(x[0:4:2])
+print(x[0::2])
+print(x[0::2])
+print(x[2::2])
+print(x[::-1])#Reverse order printing
+print(x[-1:-4:-1])
+print(x[0:4:-1])#it will give null string(Empty line# )
+print(x[4:0:-1])
+print(x[-1:])#It is not assumming to move from right to left(execption)
+lang="python"
+print()
+
+str="String is how are you"
+print((str[4:7]))
+print((str[2:5]))
+print((str[-4:-1]))
+print((str[-2:-5:-1]))
+print(str[-4:])
+
+str=input("input: ")
+if len(str)>2:
+    print("output:",str[:2]+str[-2:])
+else:
+    print("output:",str)
+
+str=(input("")
+print(str[1:-1])
+str=input
