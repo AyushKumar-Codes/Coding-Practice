@@ -69,4 +69,27 @@ print("The area of the polygon is: ",p_area)
 
 '''
 three fuction factorial,square, prime number check
+all looping programs all prime , palindron , angr etc
 '''
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+how memomry management happens in python
+
+write a code for prime and composite
+sum of digits
+counting the digits
+last occurence of lat occurence for find function
+HOW many times a substrings is repeating
+"""

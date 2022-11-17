@@ -6,3 +6,4 @@ if (x/y )> (w/z):
     print("Package 1 with Weight:",x,"Price:",y)
 elif (x/y)<(w/z):
     print("Package 2 with Weight:",w,"Price:",y)
+

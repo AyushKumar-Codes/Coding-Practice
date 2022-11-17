@@ -6,6 +6,8 @@ and we are learning data type'''
 print(x)
 #String Slicing
 s="Hello"
+#no output will be there is start and end value is same eg 4:4\
+print("Ayush"[2:2])
 #String indexing
 print(s[0])
 print(s[1])
@@ -65,6 +67,6 @@ if len(str)>2:
 else:
     print("output:",str)
 
-str=(input("")
+str=input("")
 print(str[1:-1])
 str=input

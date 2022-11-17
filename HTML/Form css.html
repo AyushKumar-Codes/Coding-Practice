@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action_page.php" method="post" autocomplete="off">
+        <!-- method="post" id used for hide the data which is to be submitted method="get" is use fo showing values after submition in url -->
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last Name: </label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="checkbox">
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="email">
+        <input type="file">
+        <input type="month">
+        <input type="number">
+        <input type="password">
+        <input type="telephone">
+        <input type="range">
+        <input type="reset">
+        <input type="">
+        <input type="radio">
+        <input type="url"><br>
+        <center><input type="submit" value="Submit"></center>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="javascript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="radio" id="r" name="Programming language" value="r">
+        <label for="r">WEb DEveloping LAnguage</label>
+        <input type="radio" id="r" name="Programming LAnguage" value="r">
+        <label  for="r">JavaScript</label>
+        <input type="radio" id="l" name="python" value="t">
+        <label  for="l">JavaScript</label>
+        <input type="radio" id="l" name="python" value="t">
+        <label  for="l">JavaScript</label><br>
+        <input type="checkbox" id="b" name="python" value="t">
+        <label  for="b">I have a Bike</label>
+        <input type="checkbox" id="l" name="python" value="t">
+        <label  for="l">I have a Car</label>
+        <input type="checkbox" id="b" name="python" value="t">
+        <label  for="b">I have  a Boat</label>
+        <select>
+            <option value="cse">cse</option>
+            <option  value="ece">ece</option>
+            <option value="mech">mech</option>
+            <option value="eee">eee</option>
+            <option value="agri">agri</option>
+        </select>
+        <input list="browser" name="browse">
+        <datalist id="browser">
+            <optgroup label="B.tech."></optgroup>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+        <fieldset>
+        </fieldset>
+        <legend>Form</legend>
+        <label>Brief you</label>
+        <textarea style="width:50%"></textarea>
+        <button type="button" onclick="alert('')">Click</button>
+        <input type="radio" id="html" name="fav_language" value="css">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="Javascript">
+        <label for="javascript" >javascript</label>
+        <input type="checkbox" id="python" name="language" value="python">
+        <label for="python" ></label>
+    </form>
+    <form>
+        <label for="fname"> First Name</label>
+        <input type="text" id="fname" name="fname" value="john" placeholder="name" required size="50" maxlength="10"><br><br>
+        <label for="lname">last name</label>
+        <input type="text" id="lname" name="lname" maxlength="3">
+        <input type="submit" value="submit">
+        <label for="phone">
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </label>
+    </form>
+</body>
+</html>

@@ -1,4 +1,4 @@
-#First Line of the Function definition can be used as a comment
+#First Line of the Function definition can be used as a comment(Doc string) Always it will work when string is written in first line
 def add(a,b):
     """
     Return sum of a given argument 

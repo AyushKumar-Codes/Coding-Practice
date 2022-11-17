@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        .layout1{
+            display: grid;
+            grid-template-areas:"nav nav nav nav" 
+                                "sidebar main main main"
+                                "sidebar b1 b2 b3"
+                                "sidebar footer1 footer1 footer1";
+            text-align: center;
+        }
+    nav{
+        background-color: bisque;
+        font-size: 20px;
+        grid-area: nav;
+
+        }
+        main{
+        background-color: rgb(53, 211, 190);
+        font-size: 20px;
+        grid-area: main;
+
+        }
+        .sidebar{
+        background-color: #1109af;
+        font-size: 20px;
+        grid-area: sidebar;
+        }
+        .box1{
+        background-color: #f069ca;
+        font-size: 20px;
+        grid-area: b1;
+        }
+        .box2{
+        background-color: #30f384;
+        font-size: 20px;
+        grid-area: b2;
+        }
+        .box3{
+        background-color: rgb(136, 4, 48);
+        font-size: 20px;
+        grid-area: b3;
+        }
+        .footer{
+        background-color: #0ba6fa;
+        font-size: 20px;
+        grid-area: footer1;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout1">
+        <nav>navbar</nav>
+        <main>main</main>
+        <div class="sidebar">sidebar</div>
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
