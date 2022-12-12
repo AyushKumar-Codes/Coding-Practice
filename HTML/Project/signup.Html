@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="signupstyle.css" />
+
+</head>
+
+<body style="background-image:linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);;">
+  <script>
+    function validateform() {
+      var name = document.myform.n1.value;
+      var p = document.myform.pas.value;
+      var c = document.myform.cp.value;
+      var e = document.myform.e.value;
+      if (name == null || name == "") {
+        alert("Name can't be blank");
+        return false;
+      }
+      else if (c != p) {
+        alert("Confirm password and password is not same");
+        return false;
+      }
+      else if (p.length < 8) {
+        alert("Weak Password");
+        return false;
+      }
+      else if (e == null || e == "") {
+        alert("E-mail can't be blank");
+        return false;
+      }
+    }
+  </script>
+  <div class="form">
+    <!-- ! Div 1 -->
+    <div class="title">Welcome</div>
+    <!-- ! Div 2 -->
+
+    <div class="subtitle">Let's create your account!</div>
+    <!-- ! Div 3 -->
+    <form name="myform" onsubmit="return validateform()" action="login.html">
+      <div class="input-container ic1">
+        <input id="first tname" class="input" type="text" placeholder=" " name="n1" />
+        <label for="first tname" class="placeholder">First name</label>
+      </div>
+      <!-- ! Div 4 -->
+
+      <div class="input-container ic2">
+        <input id="lastname" class="input" type="password" placeholder=" " name="pas" />
+        <label for="lastname" class="placeholder">Password</label>
+      </div>
+      <!-- ! Div 5 -->
+      <div class="input-container ic2">
+        <input id="lastname" class="input" type="text" placeholder=" " name="cp" />
+        <label for="lastname" class="placeholder">Confirm Password</label>
+      </div>
+      <div class="input-container ic2">
+        <input name="e" id="email" class="input" type="text" placeholder=" " />
+        <label  for="email" class="placeholder">Email </label>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>

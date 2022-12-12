@@ -177,7 +177,7 @@ print(dl)
 rl=[1,2,3,4,5,66,5,7]
 rl.remove(5)#Only first occurence is removed in  list
 print(rl)
-#pop deleted all the elemts and only return last element
+#pop deletes all the elements and only return last element
 pl=[1,2,3,4,5,5,6]
 print(pl.pop())
 print(pl.pop(-1))
@@ -244,6 +244,11 @@ x=["z","f",5,6,7,7,8]
 y=x.copy()
 print(y)
 print(x is y)
+#Clear function gives None
+h=[1,2,4,6,7,8]
+print(h.clear())
+
+
 
 
 

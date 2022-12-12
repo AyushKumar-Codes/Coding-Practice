@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validateform(){
+            var name=document.myform.n1.value;
+            var p=document.myform.pas.value;
+            var c=document.myform.cp.value;
+        if (name==null || name==""){
+                alert("Name can't be blank");
+                return false;
+        }
+        else if (c!=p){
+            alert("Confirm password and password is not same");
+            return false;
+        }
+        else if (p.length<10){
+            alert("Weak Password");
+            return false;
+        }
+    }
+    </script>
+    <form name="myform" method="post" onsubmit="validateform()">
+    Name:<input type="text" name="n1"><br>
+    password:<input type="password" name="pas"><br>
+    confirm password: <input type="password" name="cp">
+    <input type="submit" value="register">
+    </form>
+</body>
+</html>

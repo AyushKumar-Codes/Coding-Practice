@@ -1,0 +1,23 @@
+# obj=open("demo.txt","rb")
+# print(obj.read(2))
+# print(obj.read(2))
+# obj.seek(0)
+# print(obj.read())
+# obj.seek(3)
+# print(obj.read())
+
+# obj=open("demo.txt","rb")
+# print(obj.read(2).decode("utf-8"))
+# print(obj.read(2).decode("utf-8"))
+# obj.seek(0)
+# print(obj.read().decode("utf-8"))
+# obj.seek(3)
+# print(obj.read().decode("utf-8"))
+
+
+obj=open("demo.txt","w")
+obj.write("HelloWorld")
+obj.close()
+obj=open("demo.txt","rb")
+obj.seek(-3,2)
+print(obj.read().decode("utf-8"))

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction() {
+              document.getElementById("demo").innerHTML = "Paragraph changed.";
+            }
+            </script>      
+    </head>
+<body id="b1">
+<h2 id="Id">JavaScript in Body</h2>
+<h1 id="Fg"></h1>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = "My First JavaScript";
+document.getElementById("Fg").innerHTML = "My NAme is Ayush";
+</script>
+<button type="button" onclick="myFunction()">Try it</button>
+<Center id="Data"></Center>
+<script src="Java.js"></script>
+<script>
+    function fun()
+    {
+        document .getElementById("www").style.color="yellow";
+    }
+</script>
+<p id="www" onclick="fun()">Color Change</p>
+<button type="button" onclick="fun1()">Change Backgroud Color</button>
+<button type="button" onclick="image()">Change Backgroud Image</button>
+
+<p id="p1"></p>
+<script>
+document.getElementById("p1").innerHTML="5+6";
+document.write("2+6");
+console.log("hi");
+console.log(3+6);
+window.alert("Thik se lik gadhe");
+alert("Thik se lik gadhe")
+window.print("Hello")
+</script>
+<button type="button" onclick="document.write(6+9)">Value</button>
+<button type="button" onclick="window.print()">Print</button>
+<p id="demo"></p>
+<script>
+    var x=5;
+    var y=6;
+    var z=z+y;
+    document.getElementById("demo").innerHTML=
+    "The value of z is:" +z;
+    let b=10;
+    {
+        let b=2;
+        document.write(b);
+    }
+</script>
+
+<p id="dem">Good Evening</p>
+<script>
+    if (new Date().getHours() < 18)
+    {
+        document.getElementById("dem").innerHTML="Good Day"
+    }
+</script>
+<p id="dr"></p>
+<script>
+    const hour= new Data().getHours();
+    let greeting;
+    if (hour < 18)
+    {
+        greeting="Good Day"
+    }
+    else
+    {
+        greeting="good evening";
+    }
+    document.getElementById("dr").innerHTML = greeting;
+
+</script>
+<p id="day"></p>
+<script>
+let day; let d=0;
+switch (new Date().getDay()){
+    case 0:
+        day="Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day="Tuesday";
+        break;
+    default:
+        day="fun day";
+}
+document.getElementById("day").innerHTML = "Today is "+ day
+</script>
+<p id="Red"></p>
+<script>
+const time=new Date().getHours();
+let greet;
+if (time<10){
+    greet="good morning"
+}
+else if (time < 20)
+{
+    greet="good day";
+}
+else{
+    greet="Good evening";
+}
+document.getElementById("Red").innerHTML = greet;
+</script>
+<script>
+var a;
+for (a=0;a<=10;a++)
+{
+    document.write(a,"<br>")
+}
+document.write(a)
+</script>
+<p id="King"></p>
+<p id="t"></p>
+<script>
+    const person={fname:"john",lname:"Doe",age:25};
+    let txt="";
+    for (let x in person)
+    {
+        txt+=person[x]+" ";
+    document.getElementById("King").innerHTML=txt;
+    }
+    const str="javascript programming";
+    let r="";
+    for (let x in str)
+    {
+        r+=str[x]+" ";
+    document.getElementById("t").innerHTML=r;
+    }
+    
+</script>
+<p id="Tell"></p>
+<script>
+    a=10
+    i=0
+    while (i<=a)
+    {
+        i++
+        document.write(i,"<br>");
+    }
+</script>
+<script>
+    for (i=1;i<=10;i++)
+    {
+        if (i==3)
+        {
+            break;
+        }
+    document.write(i,"<br>");
+    }
+</script>
+<script>
+    for (i=1;i<=10;i++)
+    {
+        if (i==3)
+        {
+            continue;
+        }
+    document.write(i,"<br>");
+    }
+</script>
+<button onclick="funct">Press It</button>
+<!-- <script>
+    function myfunct(){
+        let text ;
+        let person = promt("Please enter your name","Harry Potter");
+        if (person ==null || person==""){
+            text="Hello"+person+" ",pe
+
+        }
+    }
+</script> -->
+<script>
+    const per={name:"abc",age:12,lname:"xyz"}
+    document.write(person.age)
+    per.address="lpu"
+    document.write(per.name," ",per.address)
+    delete per.age //this will delete the age in per dictionary
+    document.write(per.age) 
+    </script>
+    <script>
+        const pers={name:"abc" , age:12 , lname:"xyz" , fullname:function(){
+            return this.name + this.lname;
+
+        },display:function(){
+            return this.name +this.age;
+        }
+    }
+    document.write(pers.display())
+    </script>
+    
+</body>
+</html> 

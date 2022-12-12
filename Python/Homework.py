@@ -92,4 +92,5 @@ sum of digits
 counting the digits
 last occurence of lat occurence for find function
 HOW many times a substrings is repeating
+Make Heirachy Inheritance
 """

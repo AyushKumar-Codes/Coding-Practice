@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>A function</p>
+    <input type="text" onkeypress="func()">
+    <script>
+        function func(){
+            alert("You pressed a key inside the input field")
+        }
+    </script>
+    <input type="number" onkeypress="func()">
+    <!-- For converting lower case input in text box to upper case -->
+    <input type="text" onkeypress="f()" id="fn" name="w">
+    <script>
+        function f(){
+            var x=document.getElementById("fn");
+            x.value=x.value.toUpperCase();
+            document.getElementById("Demo").innerHTML=x.value;
+        }
+    </script>
+    <p id="Demo"></p>
+</body>
+</html>

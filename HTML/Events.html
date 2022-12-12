@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function md(){
+            document.getElementById("p").style.color="red";
+        }
+        function mu(){
+            document.getElementById("p").style.fontSize="40px";
+        }
+        function ol(){
+            document.getElementById("d").style.fontSize="200px";
+        }
+        function md(){
+            document.getElementById("p").style.color="red";
+        }
+        function up(){
+            document.getElementById("t").style.color="Green"
+        }
+        function down(){
+            document.getElementById("p1").style.color="Yellow";
+        }
+        function mup(){
+            document.getElementById("p1").style.color="W"
+        }
+        function bi(x){
+            x.style.height="100px";
+            x.style.width="200px";
+        }
+        function bu(x){
+            x.style.height="30px";
+            x.style.width="40px";
+        }
+        function g(){
+            var x=document.getElementById("n");
+            x.value=x.value.toUpperCase();
+        }
+        function myfun(){
+        var x=document.getElementById("se").value;
+        documemnt.getElementById("demo").innerHTML="You Selected: "+x;
+    }
+    function fu(){
+        var  x=document.getElementById("mi").value;
+        document.getElementById("demo").innerHTML="You wrote: "+x;
+    }
+    </script>
+    <p id="p" ondblclick="md()"  onmouseup="mu()">My Name is Raja Ayushmaan Singh</p>
+    <div id="d" onmousewheel="ol()" style="border-width: 30px; border-style: solid; border-color: brown;">I am studing HTML</div>
+    <div id="t" onmouseup="up()" style="border-width: 30px; border-style: solid; border-color: brown;">I want to be a coder</div>
+    <p id="p1" onmousedown="down()" onmouseup="up()">Hello</p>
+<img src="a.png" id="im" width="87" height="90" onmousemove="bi(this)" onmouseout="bu(this)">
+<input id="n" type="textbox" onblur="g()">
+<select id="se" onchange="myfun()">
+    <option value="Select">Select
+    <option value="Audi">Audi
+    <option value="BMW">BMW
+    <option value="Mercedes">Mercedes
+</select>
+<p id="demo"></p>
+<form>
+<input type="text">
+<script>
+function myFunction(){
+    alert("The form was reset");
+}
+</script>
+</form>
+</body>
+</html>

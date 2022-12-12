@@ -1,0 +1,3 @@
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.

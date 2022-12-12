@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="c1">heloo</h1>
+    <h1 class="c1">helooo</h1>
+    <h1 class="c1">heloooo</h1>
+    <h3 class="c1">helooooo</h3>
+    <button type="button" onclick="change()" >Click Here</button>
+    <style>
+        .c1{
+            color: aquamarine;
+        }
+        p{
+            color:burlywood;
+        }
+    </style>
+    <script>
+        function change(){
+            document.getElementsByClassName("c1")[2].style.color="red";
+        }
+        function change1(){
+            document.getElementsByTagName("p")[2].style.color="Purple"
+        }
+    </script>
+    <p>hellooo</p>
+    <p>hellooooo</p>
+    <p>helloooooo</p>
+    <p>helloooppp</p>
+    <p>helloooooo</p>
+    <button type="button" onclick="change1()" >Click Here</button>
+    <b onclick="change1()">ayush</b>
+</body>
+</html>

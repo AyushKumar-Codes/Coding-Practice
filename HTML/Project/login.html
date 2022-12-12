@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta chaRs. et="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="./loginstyle.css">
+
+</head>
+
+<body>
+	<script>
+		function validateform() {
+			var name = document.myform.n1.value;
+			var p = document.myform.pas.value;
+			if (name == null || name == "") {
+				alert("Name can't be blank");
+				return false;
+			}
+			else if (p.length < 8) {
+				alert("Password must be of 8 CharacteRs. ");
+				return false;
+			}
+		}
+	</script>
+	<style>
+		.img {
+			transform: translateX(-20px);
+		}
+
+		.img1 {
+			transform: translateX(-20px) translatey(4px);
+		}
+	</style>
+	<img src="./Image/cart.png" height="60px" width="80px" style="transform: translateY(170px) translateX(1080px);">
+	<p style="transform: translateY(150px) translateX(1020px); font-size:25px ;color:rgb(241, 47, 255);font-family: algerian;">Express Bazaar</p>
+	<div class="box-form">
+		
+		<div class="left">
+			<div class="overlay">
+				<h1>Express Bazaar</h1><i">
+				<p class="moto">Exprierence Shopping like never done</p>
+				<span>
+					<p style="transform:translateX(180px);font-size:20px; font-family: century schoolbook; font-size:20px;">login with social media</p>
+					<a href="https://www.facebook.com"><img src="./Image/facebook.png" height="30px" width="50px" class="img"><i
+							class="facebook" >Login with Facbook</i></a>
+					<a href="https://twitter.com/login"><img src="./Image/twitter.png" height="30px" width="30px"
+							class="img1"><i class="twitter">Login with Twitter</i></a>
+				</span>
+			</div>
+		</div>
+		<div class="right">
+			<h5>Login</h5>
+			<p>Don't have an account? <a href="signup.Html">Create Your Account</a> it takes less than a minute</p>
+			<div class="inputs">
+				<form name="myform" onsubmit="return validateform()" action="./clothing.html">
+					<input name="n1" id="username" type="text" onclick="shadow()" placeholder="user name">
+					<br>
+					<input name="pas" id="password" type="password" onclick="shadow()" placeholder="password">
+			</div>
+
+			<br><br>
+
+			<div class="remember-me--forget-password">
+				<label >
+					<input class="a" type="checkbox" checked />
+					<span class="rem" id="re">Remember me</span>
+					<a href="forget.html" style="text-decoration:none;"><p class="for">forget password?</p></a>
+				</label>
+				
+			</div>
+			<br>
+			<button id="login" type="submit">Login</button></form>
+		</div>
+
+	</div>
+</body>
+
+</html>

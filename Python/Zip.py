@@ -1,0 +1,27 @@
+x=input()
+y=input()
+l1=x.split(",")
+l2=y.split(",")
+d=zip(l1,l2)
+# Zip function is used for only once then it exhausted
+print(dict(d))
+print(list(d))
+print(set(d))
+print(tuple(d))
+# For solving above problem we have to create zip multiple time
+f=zip(l1,l2)
+print(list(f))
+a=zip(l1,l2)
+print(set(a))
+b=zip(l1,l2)
+print(tuple(b))
+o=zip(l1,l2)
+print(str(o))# Give zip oject location same on print(zip())
+# Another way is to print directly without saving but we need the zip again the above solution have to be used
+print(dict(zip(l1,l2)))
+print(list(zip(l1,l2)))
+print(tuple(zip(l1,l2)))
+print(set(zip(l1,l2)))
+print(str(zip(l1,l2)))
+print(zip(l1,l2))
+print(int(zip(l1,l2)))# on int convertion of zip it gives error
