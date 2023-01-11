@@ -1,5 +1,4 @@
 import re
-
 target_str = "Joy lucky number is 75\nTom lucky number is 25"
 
 # find 3-letter word at the start of each newline

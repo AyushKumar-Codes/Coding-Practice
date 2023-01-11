@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cal(){
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        var c= document.getElementById("c").value;
+        if (c=="a"){
+            document.getElementById("p").innerHTML=a+b;
+        }
+        else if (c=="s"){
+            document.getElementById("p").innerHTML=a-b;
+        }
+        else if (c=="m"){
+            document.getElementById("p").innerHTML=a*b;
+        }
+        else if (c=="d"){
+            document.getElementById("p").innerHTML=a/b;
+        }
+    }
+    </script>
+    <input type="number" id="a"><input type="number" id="b"><select id="c"><option value="a">add</option>
+    <option value="s">subtraction</option value="m"><option>multiplication</option><option value="d">divide</option></select>
+    <button onclick="cal()">calculate</button>
+<p id="p"></p>
+</body>
+</html>

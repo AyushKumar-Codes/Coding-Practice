@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function fact(){
+    let x=1;
+    var y=document.getElementById("a").value;
+    for(i=1;i<=y;i++){
+        x=x*i;
+    }
+    document.getElementById("p").innerHTML=x;
+    }
+</script>
+    <input type="text" id="a">
+    <button onclick="fact()">Factorial</button><br><br>
+    <p id="p"></p>
+
+</body>
+</html>

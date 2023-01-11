@@ -7,7 +7,6 @@
 #   E.G
 print(15&2)
 
-
 # Truth Table for Bitwise OR
 # Input1   Input2        Input1&2
 #   0         0             0
@@ -27,5 +26,3 @@ print(32|12)
 #   1         0             1
 #   1         1             0
 print(15^5)
-
-

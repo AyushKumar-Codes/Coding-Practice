@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validateform(){
+            var name=document.myform.n1.value;
+            var p=document.myform.pas.value;
+        if (name==null || name==""){
+                alert("Name can't be blank");
+                return false;
+        }
+        else if (p.length>7){
+            alert("Password Should be at least 8 digit");
+            return false;
+        }
+    }
+    </script>
+    <form name="myform" method="post" onsubmit="return validateform()" onreset="myFunction()">
+    Name:<input type="text" name="n1"><br>
+    password:<input type="password" name="pas"><br>
+    <input type="submit" value="submit">
+    <input type="reset" value="Reset">
+    </form>
+    <script>
+        function myFunction() {
+          alert("The form was reset");
+        }
+        </script>
+</body>
+</html>

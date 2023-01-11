@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ch(){
+        var a=document.getElementById("a").value;
+        var d=a.split("").reverse().join("");
+        
+        if (a==d){
+            document.getElementById("p").innerHTML="Palindrome"
+        }
+        else{
+            document.getElementById("p").innerHTML="Not Palindrome"
+        }
+    }
+    </script>
+    <input type="text" id="a">
+    <button onclick="ch()">Check</button>
+    <p id="p"></p> 
+</body>
+</html>

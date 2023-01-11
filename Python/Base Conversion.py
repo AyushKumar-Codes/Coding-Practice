@@ -2,7 +2,7 @@
 x=int(input())
 d=x
 l=[]
-r=0
+# r=0
 a=""
 while True:
     r=d%5
