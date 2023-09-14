@@ -10,7 +10,7 @@ int main(){
     scanf("%d",&l);
     strncpy(sstr,str+I,l);
     sstr[l]='\0';//Terminating it as it is giving extra elements
-    printf("Substring: %s",sstr);
+    printf("Substring:   %s",sstr);
 
     //Printing particular Index Element
     int a;

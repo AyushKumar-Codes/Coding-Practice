@@ -1,6 +1,7 @@
 git init
 git add "WRITE FILE NAME" (For adding particular files)
 git add . (For adding Files)
+git add -A (for adding untracked files)
 git commit -m "WRITE THE NAME OF THE COMMIT"
 git branch -M main
 git remote add origin https://github.com/AyushKumar-Codes/Coding.git
