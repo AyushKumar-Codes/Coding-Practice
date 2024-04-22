@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Conversion</title>
+</head>
+<body>
+  <div id="output"></div>
+
+  <script>
+    var json = {
+      "person": {
+        "name": "Alice Smith",
+        "age": 25,
+        "address": {
+          "street": "456 Oak Avenue",
+          "city": "Sometown",
+          "country": "USA"
+        },
+        "details": {
+          "height": "5'6\"",
+          "weight": "140 lbs"
+        },
+        "hobbies": ["reading", "painting", "hiking"]
+      }
+    };
+    var jsonString = JSON.stringify(json);
+    document.getElementById("output").innerHTML += "<p>JSON String:</p><pre>" + jsonString + "</pre>";
+
+    var jsonObject = JSON.parse(jsonString);
+
+    document.getElementById("output").innerHTML += "<p>JSON Object:</p><pre>" + JSON.stringify(jsonObject, null, 2) + "</pre>";
+  </script>
+</body>
+</html>

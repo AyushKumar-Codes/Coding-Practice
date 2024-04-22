@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="mul"></p>
+    <script>
+        let a= Number(prompt("Enter a number= "));
+        let b= Number(prompt("Enter another number= "));
+        let mul = (a,b) =>{
+            document.getElementById("mul").innerHTML ="The multiplication of "+a+" and "+b+ " is ="+ a*b;
+        }
+        mul(a,b);
+        </script>
+</body>
+</html>

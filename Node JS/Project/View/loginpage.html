@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LogIN</title>
+    <link rel="stylesheet" href="./css/Login.css">
+    <style>
+        /* Centering the placeholder text */
+        input[type="email"]::placeholder,
+        input[type="password"]::placeholder {
+            text-align: center;
+        }
+
+        /* Centering the entered text */
+        input[type="email"],
+        input[type="password"] {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            
+
+            
+
+        </div> 
+        <div class="content">
+            <h1 class="sid"><span>Indian</span> <br>Voting<br><span style="color: green;">System</span> </h1>
+
+                <div class="form" style="margin-top: 70px;">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" id="email" placeholder="Enter Email Here"><br>
+                    <input type="password" name="password" id="password" placeholder="Enter Password Here"><br>
+                    <span id="msg" style="font-size: 20px;margin-left: 27%;"></span></br>
+                    <button class="btnn"  type="submit" id="submit">Login</button><br>
+
+                    <p class="link">Don't have an account
+                    <a href="/">Sign up </a> here</a></p>
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        const socket =io();
+        const msg = document.getElementById("msg");
+        $("#submit").click((event)=>{
+            const email = document.getElementById("email").value;
+            const pass = document.getElementById("password").value;
+            socket.emit("Login",{email,pass});
+        });
+        socket.on("Login",(data)=>{
+            if(data != "Email or Password is Wrong"){
+                window.location.href = "/dashboard";
+            }
+            else{
+                msg.innerHTML = data;
+            }
+        });
+    </script>
+</body>
+</html>

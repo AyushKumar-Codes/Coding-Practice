@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="addBtn">Add Class to Odd Item</button>
+    <button id="toggleBtn">Toggle Class for Even Items</button>
+    <button id="removeBtn">Remove Class from  All Items</button>
+    <script>
+        $(document).ready(function(){
+            $('#addbtn').click(function(){
+                $('#list li:odd').addClass("hi")
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <p class="para"></p>
+    <p class="para"></p> 
+    <p></p> <!-- this is tag index 3; -->
+    <h3 id ="h"></h3>
+    <img src="ef.jpg">
+    <script>
+        document.getElementById("demo").innerText="hello <br> World";
+        document.getElementById("demo").innerHTML+="hello <br> World";
+        document.getElementsByClassName("para")[0].innerHTML="<br>Hello my name is ayush";
+        //class getElementById is a Object of arrays and indexing helps in selecting the particular element from same class name without indexing it will not.
+        document.getElementsByClassName("para")[1].innerHTML="<br>Hello my name is ayush";
+        document.getElementsByTagName("p")[3].innerHTML="TagName index 3";
+
+        //QuerySelector
+        const c=document.querySelector("p").innerHTML;
+        const arr = document.querySelectorAll("p").innerHTML;
+        document.getElementById("h").innerHTML= c;
+        // for(int i=0 ; i<arr.length;i++){
+            
+        // }
+        // document.querySelector("img").setAttribute("alt","not found");
+        // document.querySelector("img").alt="Not Found Image";
+        document.querySelector("#para").innerHTML+=" ha ha ha";// in this # is use for class querySelector
+
+    </script>
+</body>
+</html>

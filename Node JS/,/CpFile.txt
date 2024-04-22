@@ -1,0 +1,15 @@
+My name is AyushThis is appendFileSync2727
+ 27 this is today's date
+ 27 this is today's date
+ 27 this is today's date1711524259405 
+ 27 this is today's date1711524262995 
+ 27 this is today's date
+1711525215103  this the timestamp
+ 27 this is today's date
+1711525221857  this the timestamp
+ 27 this is today's date
+1711525648064  this the timestampTHis is asynchronous append
+ 27 this is today's date
+1711525772521  this the timestampTHis is asynchronous append
+ 27 this is today's date
+1711526648901  this the timestamp

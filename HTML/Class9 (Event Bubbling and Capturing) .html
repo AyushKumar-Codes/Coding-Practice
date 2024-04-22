@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Bubbling</h1>
+    <div id="out">
+    This is outer element<br>
+    <span id="in">This is inner element</span>
+    </div>
+    <h1>Capturing</h1>
+    <div id="out1">
+    This is outer element<br>
+    <span id="in1">This is inner element</span>
+    </div>
+    <script>
+        document.getElementById("out").addEventListener("click",function() {alert("You have clicked outer element")},false);
+        document.getElementById("in").addEventListener("click",function() {alert("You have clicked inner element")},false);
+        document.getElementById("out1").addEventListener("click",function() {alert("You have clicked outer element")},true);
+        document.getElementById("in1").addEventListener("click",function() {alert("You have clicked inner element")},true);
+    </script>
+</body>
+</html>

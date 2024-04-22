@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    </body><script>
+        var a=2,b="ayush",c=3,d=4.5;
+        document.write((a+c)+b+"<br>");
+        document.write(b+a+c+"<br>");// if a string comes first before a int or float addition then it is considered as concatination for whole
+        document.write(b+(a+c)+"<br>")//for above solution we can use brackets
+        document.write(a+c+b+"<br>");
+        document.write(a+b+c+d+"<br>");
+        document.write(a+b+parseFloat(c+d)+"<br>");
+        let r=0;//multiple declaration is not allowed in let means eg. let r=12 not valid
+        r=12;
+        var a=10 // multiple declaration is allowed in var
+        const e=34;
+        // e=23; uncommenting it will bring error in below write function 
+        document.write(r+" "+a+" "+e+"<br>");
+        var x=3,y=8,z=5;
+        // if(z>y && z>x){
+        //     document.write(z);
+        // }
+        // else if(x>y && x>z){
+        //     document.write(x);
+        // }
+        // else{
+        //     document.write(y)
+        // }
+        
+        document.write(Math.max(x,y,z)); //math module to find max
+        
+    </script>
+
+</body>
+</html>

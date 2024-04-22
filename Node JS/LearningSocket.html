@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LearningSocket</title>
+</head>
+<body>
+<button id="con">Create Connection</button><span id="stat" style="margin-left: 12px;">  Unconnected</span></br><br>
+<ul id="list"></ul>
+<input id = "mess"  type="text">
+<button id ="send" >Send</button>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+    let socket;
+    const input = document.getElementById("mess");
+    const list = document.getElementById("list");
+    $("#con").click(()=>{
+    socket = io();
+    socket.on('stat',mess=>{
+        $("#stat").text(mess);
+    });
+    socket.on('Message',mess=>{
+        const item = document.createElement("li");
+        item.textContent=mess;
+        list.appendChild(item);
+    });
+    });
+
+
+    $("#send").click(()=> {
+        if (input.value) {
+            socket.emit('Chat Message', input.value)
+            input.value = " ";
+        }
+    });
+
+
+</script>
+</body>
+</html>

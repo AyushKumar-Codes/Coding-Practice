@@ -1,10 +1,10 @@
 #INPUT FUNCTION
-# a = input("Enter name1")
-# b = input("Enter name2")
-# c = input("Enter name3")
-# d = input("Enter name4")
-# e = input("Enter name5")
-# print(a+" "+b+" "+c+" "+d+" "+e)
+a = input("Enter name1")
+b = input("Enter name2")
+c = input("Enter name3")
+d = input("Enter name4")
+e = input("Enter name5")
+print(a+" "+b+" "+c+" "+d+" "+e)
 
 """this is promt msg for user"""
 

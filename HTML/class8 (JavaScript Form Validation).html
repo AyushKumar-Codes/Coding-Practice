@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        form {
+            margin-left: 35%;
+            margin-top: 20%;
+            margin-right: 35%;
+            background-color: white;
+            padding: 50px;
+        }
+        button{
+            
+            width: 60%;
+
+        }
+        body{
+            background-color:rgb(220, 207, 207);
+        }
+        span{
+            color: brown;
+            font-size: 14px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    
+        <!-- <div> -->
+        <form action="" onsubmit="return validateForm()" method="get">
+            <span id="err"></span>
+            <h1 style="text-align: center;">Log In</h1>
+            <label for="name">Name: </label>
+            <input type="text" id="name" style="margin-left: 1%;"><br><br>
+
+            <!-- <label for="email">Email: </label> -->
+            <!-- <input type="email"><br><br> -->
+           <center> <button type="submit">Login </button></center>
+        </form>
+
+    
+        <script>
+            function validateForm(){
+
+                var name = document.getElementById("name").value;
+                if (name==""){
+                    // alert("Please Enter your name");
+                    document.getElementById("err").innerHTML="Please Enter your Name";
+                    return false;
+                }
+                else if(name.length<=3){
+                    document.getElementById("err").innerHTML="User name should be greater than 3";
+                    return false;
+                }
+                
+                else{
+                    return true;
+                }
+            }
+        </script>
+</body>
+</html>

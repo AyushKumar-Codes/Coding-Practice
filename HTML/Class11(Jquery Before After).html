@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+  <style>
+    #im{
+      height: 20%;
+      width: 20%;
+      display:none;
+    }
+    </style>
+  <center><h1>Image</h1><br><br>
+  <img src="a.png" id = "im">
+  <button id="show">Add</button>
+  <button id="hide">Remove</button>
+  <br>
+  <h2>Hello</h2><br>
+  <p>how are you</p><br>
+  <button id="before">Before</button>
+  <button id = "after">After</button>
+  </center>
+  <script>
+
+      $("#show").click(function(){
+        $("#im").css('display','block');
+      });
+      $("#hide").click(function(){
+        $("#im").css('display','none');
+      });
+      $("#before").click(function(){
+        $("p").before("Ayush ");
+      })
+      $("#after").click(function(){
+        $("p").after(" I wish you are going good ");
+      })
+    
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="obj"></p>
+    <script>
+    const Student={
+        Name: "Ayush",
+        Class: "K22LL",
+        Age : 20,
+        fun : function (){
+            document.getElementById("obj").innerHTML+="<br> Name: "+Student.Name+" , Class: "+Student.Class+" ,  Age: "+Student.Age;
+        }
+    }
+    document.getElementById("obj").innerHTML=Student.Name;
+    document.getElementById("obj").innerHTML+= ("<br>"+Student["Class"]);
+    delete Student.Name;
+    Student.fun();
+    </script>
+</body>
+</html>

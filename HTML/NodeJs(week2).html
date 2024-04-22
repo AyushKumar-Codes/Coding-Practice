@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname" ><br>
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname" ><br>
+        <label for="fname">AGE</label><br>
+        <input type="number" id="age"><br>
+        <label for="fname"></label><br>
+        <input type="number" id="age"><br>
+        <button id="sub" onclick="fun()">Click here</button>
+    </form>
+    <table id="my table" style="border: 3px; border-style: dashed;">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+    </table>
+    <p id="P"></p>
+    <script>
+        var fname= document.getElementById("fname").value;
+        function fun()
+    {
+        document .getElementById("p").style.color="yellow";
+    }
+        </script>
+</body>
+</html>

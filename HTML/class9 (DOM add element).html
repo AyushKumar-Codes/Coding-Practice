@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var e1 = document.createElement('p');
+        var text = document.creaTextNode("how are you?");
+        e1.append(text);
+        document.body.appendChild(e1);
+    </script>
+    <div id="one">
+        <p>Hello</p>
+    </div>
+<script>
+    var e2= document.createElement('p');
+    var text1=document.createTextNode("World!");
+    var parent = document.getElementById("one");
+    e2.appendChild(text1);
+    parent.append(e2);
+</script>
+<h3>Insert at a specific position</h3>
+<div id="two">
+    <p id="p1">Welcome</p>
+    <p id="p2">to</p>
+    <p id="p2">INT 219</p>
+</div>
+<script>
+    var e3 = document.createElement('p');
+    var text2 = document.createTextNode("Class Of");
+    e3 = appendChild(text2);
+    var parent = document.getElementById("two");
+    var child = document.getElementById("p3");
+    parent.insertBefore(e3,child);
+</script>
+<h3>Insert to a specific position relative to  a element</h3>
+<div id="four">
+    <p>Welcome</p>
+</div>
+<script>
+    var parent = document.getElementById('four');
+    parent.insertAdjacentHTML('beforeend','<p>New content</p>');
+</script>
+</body>
+</html>

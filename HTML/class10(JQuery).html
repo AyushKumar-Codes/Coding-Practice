@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>This is a Line</h1>
+    <script>
+        $(document).ready(function(){
+        $("h1").mouseenter(function(){
+        $("h1").css("font-size","100px");
+        $("h1").css("color","green");
+        });
+        });
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>This is h1 tag</h1>
+    <h2>This is h2 tag</h2>
+    <h3>This is h3 tag</h3>
+
+    <button id="bt1">Text</button>&nbsp;<button id="bt2" >HTML</button>&nbsp;<button id="bt3">Click</button>
+
+    <script>
+        
+        $(document).ready(function(){
+            $("#bt1").click(function(){
+                $("h1").text("LOVELY PROFESSIONAL UNIVERSITY");
+        });
+        $("#bt2").click(function(){
+            $("h2").html("<i>INDIA</i>");
+        });
+        $("#bt3").click(function() {  
+          $("h3").html("<img src='a.png' height='100' width='100'>") ;
+        });
+    });
+    </script>
+
+</body>
+</html>
+

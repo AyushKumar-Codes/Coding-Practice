@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Voting System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/voting.css">
+
+    <style>
+        .card-body {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+        .card-b {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+        .card-body p {
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            /*  color: #333;*/
+            transition: transform 0.3s ease;
+            margin-left: 10px;
+        }
+        .card-b p {
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            /*  color: #333;*/
+            transition: transform 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .card-body strong {
+            font-weight: bold;
+            color: #007bff; /* Change color to match your design */
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <aside id="sidebar" class="js-sidebar">
+        <!-- Content For Sidebar -->
+        <div class="h-100">
+            <div class="sidebar-logo">
+                <a href="#">Voting System</a>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-header">
+                    Voting Navigations
+                </li>
+                <li class="sidebar-item">
+                    <a href="/dashboard" class="sidebar-link">
+                        <i class="fa-solid fa-list pe-2"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="/castvote" class="sidebar-link collapsed"> <i class="fas fa-vote-yea fa-fw pe-2"></i>
+                        Caste Vote
+                    </a>
+
+                </li>
+                <li class="sidebar-item">
+                    <a href="/votingresult" class="sidebar-link collapsed">
+                        <i class="fas fa-poll fa-fw pe-2"></i> <!-- Replace with the result icon -->
+                        Voting Result
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed"><i class="fas fa-envelope fa-fw pe-2"></i>
+                        Contact Us
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse"
+                       aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
+                        Auth
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="/login" class="sidebar-link">Login</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/" class="sidebar-link">Register</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/update" class="sidebar-link">Change Password</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </div>
+    </aside>
+
+
+    <div class="main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+            <button class="btn" id="sidebar-toggle" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <span id="username"> @Sibiston!</span>
+                            <img src="img/user.jpg" class="avatar img-fluid rounded" alt="">
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="content px-3 py-2">
+            <div class="container-fluid">
+                <div class="mb-3">
+                    <h4>User Dashboard</h4>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex">
+                        <div class="card flex-fill border-0 illustration">
+                            <div class="card-body p-0 d-flex flex-fill">
+                                <div class="row g-0 w-100">
+                                    <div class="col-6">
+                                        <div class="p-3 m-1">
+                                            <h4>Welcome to your dashboard <br><span id="welcome" style="color: #1A81A1"> </span>! <br><br>
+                                                Here, you can cast your vote, track elections, review your voting history, and manage your account.
+
+                                            </h4>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-6 align-self-end text-end">
+                                        <img src="img/prof.png" class="img-fluid illustration-img"
+                                             alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex">
+                        <div class="card flex-fill border-0">
+                            <div >
+                                <div class="card-b">
+                                    <div class="flex-grow-1">
+                                        <h4  style="margin-left: 35%; margin-top: 10px;color: darkred;font-size: 30px">
+                                            Vote Status
+                                        </h4>
+                                        <p class="mb-2" id="info" style="font-family: 'Baskerville Old Face';color: #0dcaf0;font-size: 29px;margin-top: 20px">
+                                            Information
+                                        </p>
+                                        <div class="mb-0">
+
+                                            <span class="text-muted">
+                                                    <!-- Since Last Month -->
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <!-- Table Element -->
+                <div class="card border-0">
+                    <div class="card-header">
+                        <h5 class="card-title">
+                            Your Personal Information
+                        </h5>
+                        <h6 class="card-subtitle text-muted">
+                        </h6>
+                    </div>
+
+                    <div class="card-body">
+                        <p><strong>Name: </strong> <span id="Name"> John Doe</span></p>
+                        <p><strong>Email: </strong> <span id="email"> johndoe@example.com</span></p>
+                        <p><strong>Voter Id: </strong> <span id="VoterID"> Near Park</span></p>
+
+                        <p><strong>State: </strong><span id="state"> Near Park</span></p>
+
+                        <p><strong>Address: </strong><span id="address"> 123 Main Street</span></p>
+                        <p><strong>Constituency: </strong> <span id="Constituency"> Near Park</span></p>
+
+                        <p><strong>Pin Code: </strong> <span id="Pincode"> 12345</span></p>
+                        <p><strong>Username: </strong><span id="user"> johndoe123</span></p>
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <a href="#" class="theme-toggle">
+            <i class="fa-regular fa-moon"></i>
+            <i class="fa-regular fa-sun"></i>
+        </a>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row text-muted">
+                    <div class="col-6 text-start">
+                        <p class="mb-0">
+                            <a href="#" class="text-muted">
+                                <!-- <strong>CodzSwod</strong> -->
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-6 text-end">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Contact</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">About Us</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/Voting.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket =io();
+    socket.emit("dashboard","User Login");
+    const username = document.getElementById("username");
+    const name = document.getElementById("Name");
+    const VoterID = document.getElementById("VoterID");
+    const address = document.getElementById("address");
+    const pincode = document.getElementById("Pincode");
+    const email = document.getElementById("email");
+    const state = document.getElementById("state");
+    const constituency = document.getElementById("Constituency");
+    const user = document.getElementById("user");
+    const welcome = document.getElementById("welcome");
+    const info =document.getElementById("info");
+    socket.on("dashboard",(data)=>{
+            username.innerHTML = data.UserName;
+            name.innerHTML = (data.FirstName +" " + data.LastName);
+            VoterID.innerHTML = data.VoterID;
+            address.innerHTML = data.Address;
+            pincode.innerHTML = data.Pincode;
+            email.innerHTML = data.Email;
+            state.innerHTML = data.State;
+            user.innerHTML = data.UserName;
+            welcome.innerHTML = (data.FirstName +" " + data.LastName);
+            constituency.innerHTML = data.Constituency;
+            info.innerHTML = data.VoteInfo;
+    });
+</script>
+
+
+
+</body>
+
+</html>

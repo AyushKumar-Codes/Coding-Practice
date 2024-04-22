@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Demo"></p>
+    <script>
+        function delayFunction(){
+            document.write('This is time delay function');
+        }
+        function time(){
+            var t = new Date();
+            document.getElementById("Demo").innerHTML = t;
+        }
+    </script>
+    <button onclick="setTimeout(delayFunction,3000)">Click Here</button>
+    <button onclick="setInterval(time,4000)">Clock</button>
+</body>
+</html>

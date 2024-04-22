@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <script >
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                alert($("#h1").text());
+            });
+            $("#b2").click(function(){
+                alert($("#h1").html());
+            });
+            $("#b3").click(function(){
+                alert($("#lpu").attr("href"));
+            });
+            $("img").click(function(){
+                alert($("#lpu").attr("href"));
+            });
+        });
+    </script>
+    <h1 id="h1">Lovely Professional University<p>India</p></h1>
+    <h2>Punjab</h2>
+    <img src = "a.png" height ="100" width="100"><br>
+    <a href="https://www.lpu.in" id="lpu">Lpu.in </a><br><br>
+    <button id ="b1">Button 1 </button>
+    <button id="b2">Button 2</button>
+    <button id="b3">Button 3</button>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- If i use javascript in head tag then it will not work else we have to create a funtion to work
+
+        If we use window.onload then it will work
+    -->
+    
+
+<!-- <script >
+
+window.onload = function() {
+    document.getElementById("demo").innerHTML = "hello";
+}
+
+</script> -->
+</head>
+<body>
+    <p id="demo">1.</p>
+    <!-- If two same ids are used in javascript for a single function then only first tag will 
+        have effect -->
+        <!-- <script>
+            document.write("<h1 style=\"color:red \"> This is Javascript </h1>");
+            document.getElementById("demo").innerHTML="<center> hello</center>";
+            </script> -->
+    <p id="demo">2.</p> 
+            <script>
+                document.getElementById("demo").innerHTML="<center> hello</center>";
+            </script>
+
+</body>
+</html>

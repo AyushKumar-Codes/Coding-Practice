@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Grade"></p>
+    <p id="Day"></p>
+    <script>
+        var a = Number(prompt("Enter the marks: "));
+        var d= new Date().getDay();
+        let g= a/10;
+        switch(parseInt(g)){
+            case 9:
+                document.getElementById("Grade").innerHTML="Grade is = A";
+                break;
+            case 8:
+                document.getElementById("Grade").innerHTML="Grade is = B";
+                break;
+            case 7:
+                document.getElementById("Grade").innerHTML="Grade is = C";
+                break;
+            case 6:
+                document.getElementById("Grade").innerHTML="Grade is = D";
+                break;
+            case 4:
+                document.getElementById("Grade").innerHTML="Grade is = E";   
+                break; 
+            default:
+                document.getElementById("Grade").innerHTML="You are fail";
+        }
+        switch(d){
+            case 0:
+                document.getElementById("Day").innerHTML="Today is Sunday";
+                break;
+            case 1:
+                document.getElementById("Day").innerHTML="Today is Monday";
+                break;
+            case 2:
+                document.getElementById("Day").innerHTML="Today is Tuesday";
+                break;
+            case 3:
+                document.getElementById("Day").innerHTML="Today is Wednesday";
+                break;
+            case 4:
+                document.getElementById("Day").innerHTML="Today is Thrusday";
+                break;
+            case 5:
+                document.getElementById("Day").innerHTML="Today is Friday";
+                break;
+            case 6:
+                document.getElementById("Day").innerHTML="Today is Saturaday";
+                break;
+            default:
+                document.getElementById("Day").innerHTML="Unkown day because of wrong input";
+        }
+        var array=[1,3,4]
+        array.forEach(element => {
+           document.write(element); 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SignUp</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'><link rel="stylesheet" href="./css/signup.css">
+  <style>
+  	#submitBtn {
+  /* Specific styles for the submit button */
+    background-color: #d65470; 
+  display: inline-block;
+  padding: 10px;
+  min-width: 120px;
+  text-decoration: none;
+  color: #fff;
+/* Example background color */
+  border: none;
+  cursor: pointer;
+  float: right; /* Align the submit button to the right */
+}
+
+
+#submitBtn:hover {
+  /* Styles for the submit button on hover */
+/*  background-color: #ffffff;  Example darker background color */
+/*      transform: translateY(-50%);*/
+
+}
+  </style>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="wizard-section">
+		<div class="row no-gutters">
+			<div class="col-lg-6 col-md-6">
+				<div class="wizard-content-left d-flex justify-content-center align-items-center">
+				 <!-- <h1>Voting Registration</h1> -->
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<div class="form-wizard">
+					<form id="myForm" action="/" method="POST">
+						<div class="form-wizard-header">
+							<p>Fill all form field to go next step</p>
+							<ul class="list-unstyled form-wizard-steps clearfix">
+								<li class="active"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+							</ul>
+						</div>
+						<fieldset class="wizard-fieldset show">
+							<h5>Personal Information</h5>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="fname" name="FirstName">
+								<label for="fname" class="wizard-form-text-label">First Name*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="lname" name="LastName">
+								<label for="lname" class="wizard-form-text-label">Last Name*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group">
+								Gender
+								<div class="wizard-form-radio">
+									<input  id="radio1" type="radio" name="Gender" value="Male">
+									<label for="radio1">Male</label>
+								</div>
+								<div class="wizard-form-radio">
+									<input id="radio2" type="radio" name="Gender" value="Female">
+									<label for="radio2">Female</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="zcode" name="VoterID">
+								<label for="zcode" class="wizard-form-text-label">Voter ID*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group clearfix">
+								<a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
+							</div>
+						</fieldset>	
+						<fieldset class="wizard-fieldset">
+							<h5>Account Information</h5>
+							<div class="form-group">
+								<input type="email" class="form-control wizard-required" id="email" name="email">
+								<label for="email" class="wizard-form-text-label">Email*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="username" name="UserName">
+								<label for="username" class="wizard-form-text-label">User Name*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control wizard-required" id="pwd" name="Password">
+								<label for="pwd" class="wizard-form-text-label">Password*</label>
+								<div class="wizard-form-error"></div>
+								<span class="wizard-password-eye"><i class="far fa-eye"></i></span>
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control wizard-required" id="cpwd" >
+								<label for="cpwd" class="wizard-form-text-label">Confirm Password*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group clearfix">
+								<a href="javascript:;" class="form-wizard-previous-btn float-left">Previous</a>
+								<a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
+							</div>
+						</fieldset>	
+						<fieldset class="wizard-fieldset">
+							<h5>Adress Information</h5>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="bname" name="Address">
+								<label for="bname" class="wizard-form-text-label">Address</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="brname" name="Constituency">
+								<label for="brname" class="wizard-form-text-label">Constituency*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="acname" name="State">
+								<label for="acname" class="wizard-form-text-label">State*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="acon" name="PinCode">
+								<label for="acon" class="wizard-form-text-label">Pin Code*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group clearfix">
+								<a href="javascript:;" class="form-wizard-previous-btn float-left">Previous</a>
+								<!-- <a href="javascript:;" class="form-wizard-next-btn float-right">Submit</a> -->
+								<button type="button" id="submitBtn" onclick="submitForm()">Submit</button>
+							</div>
+						</fieldset>	
+					
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./js/signup.js"></script>
+<script>
+	function submitForm() {
+	document.getElementById("myForm").submit();
+	}
+</script>
+</body>
+</html>

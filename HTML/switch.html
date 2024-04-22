@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <input type="number" name="num">
+        <button  onclick="fun()">Submit</button>
+    
+    <p id="demo"></p>
+    <script>
+        function fun(){
+        var num =  document.getElementsByName("num")[0].value;
+        switch(num){
+            case "1":
+                document.getElementById("demo").innerHTML="Sunday";
+        }
+    }
+    </script>
+</body>
+</html>

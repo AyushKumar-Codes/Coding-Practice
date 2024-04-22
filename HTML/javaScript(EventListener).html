@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p">Use mouse Here</p>
+    <p id="demo"></p>
+    <script>
+        var x = document.getElementById("p");
+        x.addEventListener("mouseover",firstfun);
+        x.addEventListener("click",secondfun);
+        x.addEventListener("mouseout",thirdfun);
+        function firstfun(){
+            document.getElementById("demo").innerHTML ="Mouse over!";
+        }
+        function secondfun(){
+            document.getElementById("demo").innerHTML ="Clicked!";
+        }
+        function thirdfun(){
+            document.getElementById("demo").innerHTML ="Mouse out!";
+        }
+    </script>
+</body>
+</html>

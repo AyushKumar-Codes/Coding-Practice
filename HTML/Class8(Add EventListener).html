@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btw">Click here</button>
+    <p id ="para"></p>
+    <script>
+        var x = document.getElementById("btw");
+        x.addEventListener("click",back);
+        x.addEventListener("dblclick",text);
+        x.addEventListener("click",bg);
+        function back(){
+            document.getElementById("btw").style.background="yellow";
+        }
+        function text(){
+            document.getElementById("para").innerHTML="This a example of ADD EVENTLISTENER";
+        }
+        function bg(){
+            document.getElementsByTagName("body")[0].style.background="orange";
+        }
+        x.removeEventListener( "click",back);  //removing the click event from button
+    </script>
+</body>
+</html>

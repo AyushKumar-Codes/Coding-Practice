@@ -1,0 +1,77 @@
+<!DOCTYPE html>  
+ <html>  
+ <head>  
+  <title>Form in HTML</title>  
+  <link rel="stylesheet" href="Class3.css">
+</head>  
+ <body>  
+    <center><h2>Registration form</h2>  </center>
+    <form action="#" method="" target="" class="form">  
+     <fieldset>  
+        <legend class="legend">User personal information</legend>  
+        <label class="fname">Enter first name</label><br>  
+    <input type="text" name="firstname"><br>  
+    <label>Enter last name</label><br>  
+    <input type="text" name="lastname"><br>  
+    <p><strong>Note:</strong>The default maximum character lenght is 20.</p>  
+    <label>Enter your age: </label>  
+    <input type="number" name="num" min="50" max="80"><br><br> 
+    <label><b>Enter your Email-address</b></label>  
+    <input type="email" name="email"  placeholder="xyz@gmail.com" required> 
+    
+     <p><strong>Note:</strong>User can also enter multiple email addresses separating by comma or whitespace as following: </p>  
+     <label><b>Enter multiple Email-addresses</b></label>  
+     <input type="email" name="email"  multiple> <br><br>      
+     <label>Select file to upload:</label>  
+    <input type="file" name="newfile"><br><br>
+    <label>Enter your website URL: </label>  
+    <input type="url" name="website" placeholder="http://example.com"><br> <br>
+    <label>Enter your Birth Month-year: </label>  
+    <input type="month" name="newMonth"><br><br>
+    <label><b>Enter your Telephone Number(in format of xxx-xxx-xxxx):</b></label>  
+      <input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+    <label><b>Select your best week of year:</b></label><br><br>  
+    <input type="week" name="bestweek">   
+    <p>Pick your Favorite color: </p>  
+    <input type="color" name="upclick" value="#a52a2a"> Upclick<br>  
+    <input type="color" name="downclick" value="#f5f5dc"> Downclick <br><br>
+    Select Start and End Date of your teaching profession in previous institute: <br>
+    <input type="date" name="Startdate"> Start date:<br>
+    <input type="date" name="Enddate"> End date:<br><br>  
+    <label>  
+        Select the meeting schedule: <br><br>  
+        Select date & time: <input type="datetime-local" name="meetingdate"> <br><br>  
+      </label>    
+    <p> Select your favorite color</p>  
+    <input type="radio" name="color" value="red"> Red <br>  
+    <input type="radio" name="color" value="blue"> blue <br>  
+    <input type="radio" name="color" value="green">green <br>  
+    <input type="radio" name="color" value="pink">pink <br>  
+    <p>Select your favourite sports</p>  
+    <input type="checkbox" name="sport1" value="cricket">Cricket<br>  
+    <input type="checkbox" name="sport2" value="tennis">Tennis<br>  
+    <input type="checkbox" name="sport3" value="football">Football<br>  
+    <input type="checkbox" name="sport4" value="baseball">Baseball<br>  
+    <input type="checkbox" name="sport5" value="badminton">Badminton<br><br>
+    <label for="register_country" class="label">Select Country:</label></td>  
+    <select name="country" id="register_country" style="width:160px">  
+        <option value="india">india</option>  
+        <option value="pakistan">pakistan</option>  
+        <option value="africa">africa</option>  
+        <option value="china">china</option>  
+        <option value="other">other</option>  
+    </select><br> 
+    <br>Enter your Address:<br>  
+    <textarea></textarea><br>  
+    <input type="submit" value="submit" >
+    <input type="button" value="Click me " onclick="alert('you are learning HTML')">  
+  </form>  
+ </body>  
+</html>  
+
+<!-- 
+put & post
+<datalist>
+<keygen>
+<output>
+ -->

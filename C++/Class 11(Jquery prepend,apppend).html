@@ -1,0 +1,33 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>LPU</h1>
+    <p>Hey there</p>
+    <button id="btn1">Prepend</button>
+    <button id="btn2">Append</button>
+    <button id="btn3">Before</button>
+    <button id="btn4">After</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").prepend("hello");
+            });
+            $("#btn2").click(function(){
+                $("p").append("How are you");
+            });
+            $("#btn3").click(function(){
+                $("p").before("hello");
+            });
+            $("#btn4").click(function(){
+                $("p").after("How are you");
+            });
+        });
+    </script>
+</body>
+</html>
