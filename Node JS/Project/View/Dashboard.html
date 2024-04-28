@@ -2,6 +2,7 @@
 <html lang="en" data-bs-theme="dark" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,6 @@
 
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/voting.css">
-
     <style>
         .card-body {
             display: grid;
@@ -70,7 +70,7 @@
                 </li>
                 <li class="sidebar-item">
                     <a href="/castvote" class="sidebar-link collapsed"> <i class="fas fa-vote-yea fa-fw pe-2"></i>
-                        Caste Vote
+                        &nbsp; Cast Vote
                     </a>
 
                 </li>
@@ -82,14 +82,14 @@
                 </li>
 
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed"><i class="fas fa-envelope fa-fw pe-2"></i>
+                    <a href="mailto:your_email@example.com" class="sidebar-link collapsed"><i class="fas fa-envelope fa-fw pe-2"></i>
                         Contact Us
                     </a>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse"
                        aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
-                        Auth
+                        Account
                     </a>
                     <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
@@ -99,7 +99,10 @@
                             <a href="/" class="sidebar-link">Register</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="/update" class="sidebar-link">Change Password</a>
+                            <a href="/password" class="sidebar-link">Change Password</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/delete" class="sidebar-link">Delete Account</a>
                         </li>
                     </ul>
                 </li>
@@ -118,9 +121,13 @@
             <div class="navbar-collapse navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <span id="username"> @Sibiston!</span>
+                        <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0"><span id="username"> @Sibiston!</span>
                             <img src="img/user.jpg" class="avatar img-fluid rounded" alt="">
-
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a href="/dashboard" class="dropdown-item">Profile</a>
+                            <a href="/logout" class="dropdown-item">Logout</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -128,7 +135,7 @@
         <main class="content px-3 py-2">
             <div class="container-fluid">
                 <div class="mb-3">
-                    <h4>User Dashboard</h4>
+                    <h5>User Dashboard</h5>
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-6 d-flex">

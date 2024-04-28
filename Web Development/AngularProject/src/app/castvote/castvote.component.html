@@ -1,0 +1,223 @@
+<div class="main">
+    <nav class="navbar navbar-expand px-3 border-bottom">
+        <button class="btn" id="sidebar-toggle" type="button">
+            <span  class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0"><span
+                            id="username"> &#64;Ayush!</span>
+                        <img src="assets/img/user.jpg" class="avatar img-fluid rounded" alt="">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a href="/dashboard" class="dropdown-item">Profile</a>
+                        <a href="/logout" class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="content px-3 py-2">
+        <div class="container-fluid">
+            <div class="mb-3">
+                <h4>Voting Dashboard</h4>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex">
+                    <div class="card flex-fill border-0 illustration">
+                        <div class="card-body p-0 d-flex flex-fill">
+                            <div class="row g-0 w-100">
+                                <div class="col-6">
+                                    <div class="p-3 m-1" id="party">
+                                        <h4>Mr. <span id="name"></span>&nbsp; Here You can Vote for your Party </h4>
+                                        <br>
+                                        <span style="font-family: Century;font-size: 20px">First Goto Party then Select Your Candidate</span><br><br>
+                                        <span style="font-family: Century;font-size: 20px;color: #0a58ca">"Vote today for a better tomorrow."</span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-6 align-self-end text-end">
+                                    <img src="assets/img/user.jpg" height="335px" width="270px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex">
+                    <div class="card flex-fill border-0">
+                        <div class="card-body py-4">
+                            <div class="d-flex align-items-start">
+                                <div class="flex-grow-1">
+                                    <h4 class="mb-2" style="margin-left: 7%">
+                                        <span style="color: #5c5b83"> Constinuency</span>: <span id="constituency"
+                                                                                                 style="color: #8B8D8F">Anisabad</span>
+                                        <span style="color: #4f4d78;margin-left: 15%"> State </span>: <span
+                                            id="state" style="color: #8B8D8F">Bihar</span>
+                                    </h4>
+                                    <hr>
+                                    <div id="side"><span style="font-size: 20px;margin-left: 35px">Vote for The Candidate in your constituency</span>
+                                        <img src="assets/img/down.gif" height="200" width="550">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Table Element -->
+        <div class="card border-0">
+            <div class="card-header">
+                <!-- <h5 class="card-title">Your Personal Information
+
+                </h5> -->
+                <h6 class="card-subtitle text-muted">
+                </h6>
+            </div>
+
+            <div class="card-body" id="card">
+
+                <section id="portfolio" class="portfolio">
+                    <div class="main-text">
+
+                        <h2 style="margin-left:28%">Vote Your Favorite Candidate</h2>
+                    </div>
+
+                    <div class="container">
+
+                        <div class="portfolio-gallery">
+                            <form method="post" action="#">
+                                <input type="hidden" name="VotedParty" value="BJP">
+                                <div class="port-box mix All product">
+                                    <div class="port-img">
+                                        <img src="assets/img/bjp.png" alt="">
+                                    </div>
+
+                                    <div class="port-content">
+                                        <h3 style="margin-top:4%">Bhartiya Janta Party</h3>
+
+
+                                        <img src="assets/img/modi.jpg" alt="" width="250px" heigth="200px">
+
+                                        <p>Canditate Name : Narendra Modi<br>
+                                            Age : 75 Years<br>
+                                            Birth Place : Vadnagar, Gujrat
+                                        </p>
+                                        <button class="btn btn-primary">Vote</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <form method="post" action="#">
+                                <input type="hidden" name="VotedParty" value="Congress">
+                                <div class="port-box mix All product">
+                                    <div class="port-img">
+                                        <img src="assets/img/congress.png" alt="">
+                                    </div>
+
+                                    <div class="port-content">
+                                        <h3 style="margin-top:4%">Indian National Congress</h3>
+
+
+                                        <img src="assets/img/rahul.jpg" alt="" width="250px" heigth="200px">
+
+                                        <p>Canditate Name: Rahul Gandhi<br>
+                                            Age : 53 years<br>
+                                            Birth Place : New Delhi
+                                        </p>
+                                        <button class="btn btn-primary">Vote</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <form method="post" action="#">
+                                <input type="hidden" name="VotedParty" value="AAP">
+                                <div class="port-box mix All product">
+                                    <div class="port-img">
+                                        <img src="assets/img/AAP.png" alt="">
+                                    </div>
+
+                                    <div class="port-content">
+                                        <h3 style="margin-top:4%">Aam Aadmi Party</h3>
+
+
+                                        <img src="assets/img/arvind.jpg" alt="" width="250px" heigth="2px">
+
+                                        <p>Canditate Name : Arvind Kejriwal<br>
+                                            Age : 55 years<br>
+                                            Birth Place : Siwani, Haryana
+                                        </p>
+                                        <button class="btn btn-primary">Vote</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <form method="post" action="#">
+                                <input type="hidden" name="VotedParty" value="BSP">
+                                <div class="port-box mix All product">
+                                    <div class="port-img">
+                                        <img src="assets/img/BSP.png" alt="">
+                                    </div>
+
+                                    <div class="port-content">
+                                        <h3 style="margin-top:4%">Bahujan Samaj Party</h3>
+
+
+                                        <img src="assets/img/mayawati.avif" alt="" width="250px" heigth="200px">
+
+                                        <p>Canditate Name : Kumari Mayawati<br>
+                                            Age : 68 years<br>
+                                            Birth Place : New Delhi
+                                        </p>
+                                        <button class="btn btn-primary">Vote</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <form method="post" action="#">
+                                <input type="hidden" name="VotedParty" value="CPI">
+                                <div class="port-box mix All product">
+                                    <div class="port-img">
+                                        <img src="assets/img/CPI.png" alt="">
+                                    </div>
+
+                                    <div class="port-content">
+                                        <h3 style="margin-top:4%">Communist Party of India</h3>
+
+
+                                        <img src="assets/img/raja.gif" alt="" width="250px" heigth="200px">
+
+                                        <p>Canditate Name: Doraisamy Raja<br>
+                                            Age : 74 years<br>
+                                            Birth Place : Tamil Nadu
+                                        </p>
+                                        <button class="btn btn-primary">Vote</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <form method="post" action="#">
+                                <input type="hidden" name="VotedParty" value="NPP">
+                                <div class="port-box mix All product">
+                                    <div class="port-img">
+                                        <img src="assets/img/NPP.png" alt="">
+                                    </div>
+
+                                    <div class="port-content">
+                                        <h3 style="margin-top:4%">National People's Party</h3>
+
+
+                                        <img src="assets/img/conrad.jpg" alt="" width="250px" heigth="200px">
+
+                                        <p>Canditate Name : Conrad Sangma <br>
+                                            Age : 46 years<br>
+                                            Birth Place : West Garo Hills district, Meghalaya
+                                        </p>
+                                        <button class="btn btn-primary">Vote</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+
+        </div>

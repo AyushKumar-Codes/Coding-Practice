@@ -7,491 +7,460 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indian Voting System</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
 
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/voting.css">
-        <link rel="stylesheet" href="css/dashboard.css">
-        
-        
+    <link rel="stylesheet" href="css/dashboard.css">
 
 
-    <style >
-    /* CSS for poll name */
-/* CSS for poll name */
-.poll-name {
-  text-align: center;
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* CSS for candidate name */
-.candidate-name {
-  text-align: center;
-  font-size: 20px;
-/*  color: #333;*/
-}
-
-/* CSS for candidate row */
-.candidate-row {
-  display: flex;
-  justify-content: center;
-}
-
-/* CSS for vote button */
-.vote-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.vote-button:hover {
-  background-color: #0056b3;
-}
-
-.fa-hand-point-up {
-  margin-left: 5px;
-}
+    <style>
 
 
-
-
-/* CSS for candidate row */
-.candidate-row {
-  display: flex;
-  flex-wrap: wrap; /* Allow flex items to wrap */
-  justify-content: center;
-  margin: -20px; /* Negative margin to compensate for padding */
-}
-
-/* CSS for candidate column */
-.col-lg-4 {
-  flex: 0 0 calc(33.333% - 40px); /* Adjust width of columns and add spacing */
-  margin: 20px; /* Add spacing between columns */
-}
-
-
-.candidate-image {
-    border-radius: 50%; /* Make the image circular */
-    width: 80px; /* Adjust the width as needed */
-    height: 80px; /* Adjust the height as needed */
-    object-fit: cover; /* Ensure the image fills the circular shape */
-}
-
-
-/*
-
-.candidate-item {
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    padding: 20px; 
-    margin-bottom: 20p;
-    transition: transform 0.3s;
-}
-
-.candidate-item:hover {
-    transform: translateY(-5px);
-}
-
-.candidate-image {
-    display: block; 
-    margin: 0 auto 10px; 
-}
-
-.candidate-details {
-    text-align: center; 
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-.candidate-info h2 {
-    display: inline-block; /* Display the candidate name on the same line as the image */
-    vertical-align: middle; /* Align the candidate name vertically in the middle */
-}
-
-
-
-
-
-
-
+        .candidate-info h2 {
+            display: inline-block; /* Display the candidate name on the same line as the image */
+            vertical-align: middle; /* Align the candidate name vertically in the middle */
+        }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <aside id="sidebar" class="js-sidebar">
-            <!-- Content For Sidebar -->
-            <div class="h-100">
-                <div class="sidebar-logo">
-                    <a href="#">Voting System</a>
-                </div>
-                <ul class="sidebar-nav">
-                    <li class="sidebar-header">
-                        Admin Elements
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="/dashboard" class="sidebar-link">
-                            <i class="fa-solid fa-list pe-2"></i>
-                            Dashboard
+<div class="wrapper">
+    <aside id="sidebar" class="js-sidebar">
+        <!-- Content For Sidebar -->
+        <div class="h-100">
+            <div class="sidebar-logo">
+                <a href="#">Voting System</a>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-header">
+                    Voting Navigations
+                </li>
+                <li class="sidebar-item">
+                    <a href="/dashboard" class="sidebar-link">
+                        <i class="fa-solid fa-list pe-2"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="/castvote" class="sidebar-link collapsed"> <i class="fas fa-vote-yea fa-fw pe-2"></i>
+                        &nbsp; Cast Vote
+                    </a>
+
+                </li>
+
+
+                <li class="sidebar-item">
+                    <a href="/votingresult" class="sidebar-link collapsed">
+                        <i class="fas fa-poll fa-fw pe-2"></i> <!-- Replace with the result icon -->
+                        Voting Result
+                    </a>
+                </li>
+
+
+                <li class="sidebar-item">
+                    <a href="mailto:your_email@example.com" class="sidebar-link collapsed"><i class="fas fa-envelope fa-fw pe-2"></i>
+                        Contact Us
+                    </a>
+
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse"
+                       aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
+                        Account
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="/login" class="sidebar-link">Login</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/" class="sidebar-link">Register</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/password" class="sidebar-link">Change Password</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/delete" class="sidebar-link">Delete Account</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </aside>
+    <div class="main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+            <button class="btn" id="sidebar-toggle" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0"><span
+                                id="username"> @Sibiston!</span>
+                            <img src="img/user.jpg" class="avatar img-fluid rounded" alt="">
                         </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a href="/dashboard" class="dropdown-item">Profile</a>
+                            <a href="/logout" class="dropdown-item">Logout</a>
+                        </div>
                     </li>
-                    <li class="sidebar-item">
-                        <a href="/castvote" class="sidebar-link collapsed"> <i class="fas fa-vote-yea fa-fw pe-2"></i>
-                            Caste Vote
-                        </a>
-                       
-                    </li>
-
-
-                   <li class="sidebar-item">
-    <a href="/votingresult" class="sidebar-link collapsed">
-        <i class="fas fa-poll fa-fw pe-2"></i> <!-- Replace with the result icon -->
-        Voting Result
-    </a>
-</li>
-
-
-
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed"><i class="fas fa-envelope fa-fw pe-2"></i>
-                            Contact Us
-                        </a>
-                        <!-- <ul id="posts" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Post 1</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Post 2</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Post 3</a>
-                            </li>
-                        </ul> -->
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse"
-                            aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
-                            Auth
-                        </a>
-                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="/login" class="sidebar-link">Login</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="/" class="sidebar-link">Register</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="/update" class="sidebar-link">Change Password</a>
-                            </li>
-                        </ul>
-                    </li>
-                    
                 </ul>
             </div>
-        </aside>
-        <div class="main">
-            <nav class="navbar navbar-expand px-3 border-bottom">
-                <button class="btn" id="sidebar-toggle" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse navbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">@Sibiston!
-                                <img src="img/user.jpg" class="avatar img-fluid rounded" alt="">
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <a href="index.html" class="dropdown-item">Profile</a>
-                                <a href="#" class="dropdown-item">Setting</a>
-                                <a href="loginpage.html" class="dropdown-item">Logout</a>
-                            </div>
-                        </li>
-                    </ul>
+        </nav>
+        <main class="content px-3 py-2">
+            <div class="container-fluid">
+                <div class="mb-3">
+                    <h4>Voting Dashboard</h4>
                 </div>
-            </nav>
-            <main class="content px-3 py-2">
-                <div class="container-fluid">
-                    <div class="mb-3">
-                        <h4>Voting Dashboard</h4>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>Voting Area to vote your Candidate</h4>
-</h4>
-                                                <!-- <p class="mb-0">Admin Dashboard, CodzSword</p> -->
-                                            </div>
-                                        </div>
-                                        <div class="col-6 align-self-end text-end">
-                                            <img src="img/user.jpg" class="img-fluid illustration-img"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h4 class="mb-2">
-                                                Select your party to vote
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex">
+                        <div class="card flex-fill border-0 illustration">
+                            <div class="card-body p-0 d-flex flex-fill">
+                                <div class="row g-0 w-100">
+                                    <div class="col-6">
+                                        <div class="p-3 m-1" id="party">
+                                            <h4>Mr. <span id="name"></span>&nbsp; Here You can Vote for your Party </h4>
+                                            <br>
+                                            <span style="font-family: Century;font-size: 20px">First Goto Party then Select Your Candidate</span><br><br>
+                                            <span style="font-family: Century;font-size: 20px;color: #0a58ca">"Vote today for a better tomorrow."</span>
                                             </h4>
-                                            <p class="mb-2">
-                                                Make decision wisely
-                                            </p>
-                                            <div class="mb-0">
-                                                <span class="badge text-success me-2">
-                                                    +9.0%
-                                                </span>
-                                                <span class="text-muted">
-                                                    Since Last Month
-                                                </span>
-                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 align-self-end text-end">
+                                        <img src="img/user.jpg" height="335px" width="270px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex">
+                        <div class="card flex-fill border-0">
+                            <div class="card-body py-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-grow-1">
+                                        <h4 class="mb-2" style="margin-left: 7%">
+                                            <span style="color: #5c5b83"> Constinuency</span>: <span id="constituency"
+                                                                                                     style="color: #8B8D8F">Anisabad</span>
+                                            <span style="color: #4f4d78;margin-left: 15%"> State </span>: <span
+                                                id="state" style="color: #8B8D8F">Bihar</span>
+                                        </h4>
+                                        <hr>
+                                        <div id="side"><span style="font-size: 20px;margin-left: 35px">Vote for The Candidate in your constituency</span>
+                                            <img src="img/down.gif" height="200" width="550">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Table Element -->
-                    <div class="card border-0">
-                        <div class="card-header">
-                            <!-- <h5 class="card-title">Your Personal Information
-                                
-                            </h5> -->
-                            <h6 class="card-subtitle text-muted">
-                            </h6>
-                        </div>
-
-                        <div class="card-body">
-                      
-
-
-
- 
-
-
-
-<section id="portfolio" class="portfolio">
-    <div class="main-text">
-            
-            <h2>Vote Your Favorite Candidate</h2>
-    </div>
-
-    <div class="container">
-        
-         
-
- <div class="portfolio-gallery">
-
-    
-    
-        <div class="port-box mix All product">
-            <div class="port-img">
-                <img src="img/bjp.png" alt="">
-            </div>
-
-            <div class="port-content">
-                <h3>Graphic Design</h3>
-                <div class="ig">
-
-                <img src="img/congress.png" alt="" width="50px" heigth="50px" style>
-            </div>
-                <p>Once upon a time, in a quaint village nestled between rolling hills and lush forests, there lived a kind-hearted young woman .
-                </p>
- <button class="btn btn-primary">Vote</button>             </div>
-        </div>
-
-
-
-
-
-        <div class="port-box mix All product">
-            <div class="port-img">
-                <img src="img/congress.png" alt="">
-            </div>
-
-            <div class="port-content">
-                <h3>Graphic Design</h3>
-                <div class="ig">
-
-                <img src="logo2.webp" alt="" width="50px" heigth="50px" style>
-            </div>
-                <p>Once upon a time, in a quaint village nestled between rolling hills and lush forests, there lived a kind-hearted young woman .
-                </p>
- <button class="btn btn-primary">Vote</button>             </div>
-        </div>
-
-
-
-
-
-
-
-
-
-        <div class="port-box mix All product">
-            <div class="port-img">
-                <img src="img/AAP.png" alt="">
-            </div>
-
-            <div class="port-content">
-                <h3>Graphic Design</h3>
-                <div class="ig">
-
-                <img src="modi-2.avif" alt="" width="50px" heigth="50px" style>
-            </div>
-                <p>Once upon a time, in a quaint village nestled between rolling hills and lush forests, there lived a kind-hearted young woman .
-                </p>
- <button class="btn btn-primary">Vote</button>             </div>
-        </div>
-
-
-
-
-
-
-
-        <div class="port-box mix All product">
-            <div class="port-img">
-                <img src="img/BSP.png" alt="">
-            </div>
-
-            <div class="port-content">
-                <h3>Graphic Design</h3>
-                <div class="ig">
-
-                <img src="logo2.webp" alt="" width="50px" heigth="50px" style>
-            </div>
-                <p>Once upon a time, in a quaint village nestled between rolling hills and lush forests, there lived a kind-hearted young woman .
-                </p>
- <button class="btn btn-primary">Vote</button>             </div>
-        </div>
-
-
-
-
-        <div class="port-box mix All product">
-            <div class="port-img">
-                <img src="img/CPI.png" alt="">
-            </div>
-
-            <div class="port-content">
-                <h3>Graphic Design</h3>
-                <div class="ig">
-
-                <img src="logo2.webp" alt="" width="50px" heigth="50px" style>
-            </div>
-                <p>Once upon a time, in a quaint village nestled between rolling hills and lush forests, there lived a kind-hearted young woman .
-                </p>
- <button class="btn btn-primary">Vote</button>             </div>
-        </div>
-
-
-
-
-
-        <div class="port-box mix All product">
-            <div class="port-img">
-                <img src="img/NPP.png" alt="">
-            </div>
-
-            <div class="port-content">
-                <h3>Graphic Design</h3>
-                <div class="ig">
-
-                <img src="logo2.webp" alt="" width="50px" heigth="50px" style>
-            </div>
-                <p>Once upon a time, in a quaint village nestled between rolling hills and lush forests, there lived a kind-hearted young woman .
-                </p>
- <button class="btn btn-primary">Vote</button>             </div>
-        </div>
-
-
- </div>     
-    </div>
-</section>
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
-                    </div>
                 </div>
-            </main>
-             <a href="#" class="theme-toggle">
-                <i class="fa-regular fa-moon"></i>
-                <i class="fa-regular fa-sun"></i>
-            </a>
-        </div>
+            </div>
+            <!-- Table Element -->
+            <div class="card border-0">
+                <div class="card-header">
+                    <!-- <h5 class="card-title">Your Personal Information
+
+                    </h5> -->
+                    <h6 class="card-subtitle text-muted">
+                    </h6>
+                </div>
+
+                <div class="card-body" id="card">
+
+                    <section id="portfolio" class="portfolio">
+                        <div class="main-text">
+
+                            <h2 style="margin-left:28%">Vote Your Favorite Candidate</h2>
+                        </div>
+
+                        <div class="container">
+
+                            <div class="portfolio-gallery">
+                                <form method="post" action="#">
+                                    <input type="hidden" name="VotedParty" value="BJP">
+                                    <div class="port-box mix All product">
+                                        <div class="port-img">
+                                            <img src="img/bjp.png" alt="">
+                                        </div>
+
+                                        <div class="port-content">
+                                            <h3 style="margin-top:4%">Bhartiya Janta Party</h3>
+
+
+                                            <img src="img/modi.jpg" alt="" width="250px" heigth="200px">
+
+                                            <p>Canditate Name : Narendra Modi<br>
+                                                Age : 75 Years<br>
+                                                Birth Place : Vadnagar, Gujrat
+                                            </p>
+                                            <button class="btn btn-primary">Vote</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form method="post" action="#">
+                                    <input type="hidden" name="VotedParty" value="Congress">
+                                    <div class="port-box mix All product">
+                                        <div class="port-img">
+                                            <img src="img/congress.png" alt="">
+                                        </div>
+
+                                        <div class="port-content">
+                                            <h3 style="margin-top:4%">Indian National Congress</h3>
+
+
+                                            <img src="img/rahul.jpg" alt="" width="250px" heigth="200px">
+
+                                            <p>Canditate Name: Rahul Gandhi<br>
+                                                Age : 53 years<br>
+                                                Birth Place : New Delhi
+                                            </p>
+                                            <button class="btn btn-primary">Vote</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form method="post" action="#">
+                                    <input type="hidden" name="VotedParty" value="AAP">
+                                    <div class="port-box mix All product">
+                                        <div class="port-img">
+                                            <img src="img/AAP.png" alt="">
+                                        </div>
+
+                                        <div class="port-content">
+                                            <h3 style="margin-top:4%">Aam Aadmi Party</h3>
+
+
+                                            <img src="img/arvind.jpg" alt="" width="250px" heigth="2px">
+
+                                            <p>Canditate Name : Arvind Kejriwal<br>
+                                                Age : 55 years<br>
+                                                Birth Place : Siwani, Haryana
+                                            </p>
+                                            <button class="btn btn-primary">Vote</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form method="post" action="#">
+                                    <input type="hidden" name="VotedParty" value="BSP">
+                                    <div class="port-box mix All product">
+                                        <div class="port-img">
+                                            <img src="img/BSP.png" alt="">
+                                        </div>
+
+                                        <div class="port-content">
+                                            <h3 style="margin-top:4%">Bahujan Samaj Party</h3>
+
+
+                                            <img src="img/mayawati.avif" alt="" width="250px" heigth="200px">
+
+                                            <p>Canditate Name : Kumari Mayawati<br>
+                                                Age : 68 years<br>
+                                                Birth Place : New Delhi
+                                            </p>
+                                            <button class="btn btn-primary">Vote</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form method="post" action="#">
+                                    <input type="hidden" name="VotedParty" value="CPI">
+                                    <div class="port-box mix All product">
+                                        <div class="port-img">
+                                            <img src="img/CPI.png" alt="">
+                                        </div>
+
+                                        <div class="port-content">
+                                            <h3 style="margin-top:4%">Communist Party of India</h3>
+
+
+                                            <img src="img/raja.gif" alt="" width="250px" heigth="200px">
+
+                                            <p>Canditate Name: Doraisamy Raja<br>
+                                                Age : 74 years<br>
+                                                Birth Place : Tamil Nadu
+                                            </p>
+                                            <button class="btn btn-primary">Vote</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form method="post" action="#">
+                                    <input type="hidden" name="VotedParty" value="NPP">
+                                    <div class="port-box mix All product">
+                                        <div class="port-img">
+                                            <img src="img/NPP.png" alt="">
+                                        </div>
+
+                                        <div class="port-content">
+                                            <h3 style="margin-top:4%">National People's Party</h3>
+
+
+                                            <img src="img/conrad.jpg" alt="" width="250px" heigth="200px">
+
+                                            <p>Canditate Name : Conrad Sangma <br>
+                                                Age : 46 years<br>
+                                                Birth Place : West Garo Hills district, Meghalaya
+                                            </p>
+                                            <button class="btn btn-primary">Vote</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+
+            </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/Voting.js"></script>
+</div>
+</main>
+<a href="#" class="theme-toggle">
+    <i class="fa-regular fa-moon"></i>
+    <i class="fa-regular fa-sun"></i>
+</a>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/Voting.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+    socket.emit("castvote", "Cast Vote Section");
+    const username = document.getElementById("username");
+    const name = document.getElementById("name");
+    const constituency = document.getElementById("constituency");
+    const state = document.getElementById("state");
+    const card = document.getElementById("card");
+    const party = document.getElementById("party");
+    const side = document.getElementById("side");
+    socket.on("castvote", (data) => {
+        username.innerHTML = data.UserName;
+        name.innerHTML = data.Name;
+        constituency.innerHTML = data.constituency;
+        state.innerHTML = data.state;
+        if (data.votedparty) {
+            card.innerHTML = (
+                ` <span style="margin-left: 35%;font-size: 40px;font-family: 'Century Schoolbook';color: #20c997"> You Have Voted</span>
+                <br>
+                 <img src="img/done.gif" height="400px" width="500px" style="margin-left: 27.8%">
+                `
+            );
+            if (data.votedparty === "BJP") {
+                party.innerHTML = (`
+                <span style="font-size: 20px;margin-left:7%;color: #05a3d2">You Have Voted To <span style="font-family: Stencil;color: #ED1B23">${data.votedparty}</span></span><br><br>
+                   <img src="img/bjp.png" height="200px" width="200px" style="margin-left: 30px">
+              `);
+              side.style.backgroundColor="#f7d4b2";
+                side.style.padding="8px";
+                side.style.borderRadius="8px";
+              side.innerHTML=(`
+                    <span style="font-family: 'Cambria Math';font-size: 20px;color: #0a53be;"> Your Valuable vote has been duly registered for<span style="color: tomato">&nbsp;Narendra Modi.</span></span>
+                    <div style="display: flex;align-items: center">
+
+                    <img src="img/modi.jpg" height="185px" width="200px" style="border: 9px solid yellow;border-radius: 30px">
+                    <span style="margin-left: 7px; background-color: #76ebef;border:7px solid #8b67b5;border-radius: 20px;line-height: 19px;word-spacing: 3px;padding: 7px ">Narendra Modi, India’s 14th Prime Minister, is a key Bharatiya Janata Party leader.
+                    Known for his leadership and poverty alleviation efforts,
+                    he has been praised for lifting 400 million people out of poverty.
+                     Despite economic challenges, many Indians view him as a problem-solving leader.</span></div>
+
+              `);
+            } else if (data.votedparty === "Congress") {
+                party.innerHTML = (`
+                <span style="font-size: 20px;margin-left:16%;color: #05a3d2">You Have Voted To <span style="font-family: Stencil;color: #ED1B23;margin-left:32%">${data.votedparty}</span></span><br><br>
+                   <img src="img/congress.png" height="200px" width="200px" style="margin-left: 30px">
+
+              `);
+                side.style.backgroundColor="#f7d4b2";
+                side.style.padding="8px";
+                side.style.borderRadius="8px";
+                side.innerHTML=(`
+                    <span style="font-family: 'Cambria Math';font-size: 20px;color: #0a53be;"> Your Valuable vote has been duly registered for<span style="color: tomato">&nbsp;Rahul Gandhi.</span></span>
+                    <div style="display: flex;align-items: center">
+
+                    <img src="img/rahul.jpg" height="185px" width="200px" style="border: 9px solid yellow;border-radius: 30px">
+                    <span style="margin-left: 7px; background-color: #76ebef;border:7px solid #8b67b5;border-radius: 20px;line-height: 17px;word-spacing: 3px;padding: 7px ">
+                    Rahul Gandhi, a prominent figure in Indian politics, is known for his dedication to social issues. His commitment to democratic values, inclusivity, and social justice has earned him respect. His speeches often reflect his deep understanding of India’s complexities and his vision for its future. He strives for a progressive India.</span></div>
+
+              `);
+            } else if (data.votedparty === "CPI") {
+                party.innerHTML = (`
+                <span style="font-size: 20px;margin-left:7%;color: #05a3d2">You Have Voted To <span style="font-family: Stencil;color: #ED1B23">${data.votedparty}</span></span><br><br>
+                   <img src="img/CPI.png" height="200px" width="200px" style="margin-left: 30px">
+              `);
+                side.style.backgroundColor="#f7d4b2";
+                side.style.padding="8px";
+                side.style.borderRadius="8px";
+                side.innerHTML=(`
+                    <span style="font-family: 'Cambria Math';font-size: 19px;color: #0a53be;"> Your Valuable vote has been duly registered for<span style="color: tomato">&nbsp;Doraisamy Raja.</span></span>
+                    <div style="display: flex;align-items: center">
+
+                    <img src="img/raja.gif" height="185px" width="200px" style="border: 9px solid yellow;border-radius: 30px">
+                    <span style="margin-left: 7px; background-color: #76ebef;border:7px solid #8b67b5;border-radius: 20px;line-height: 16px;word-spacing: 3px;padding: 7px ">
+                    Doraisamy Raja, a seasoned CPI politician, is recognized for his unwavering commitment to the principles of socialism. His advocacy for workers’ rights and social equality reflects his dedication to the common man. His leadership in the CPI demonstrates his strategic acumen and commitment to democratic values. He is a respected figure in Indian politics
+                    </span></div>
+              `);
+            } else if (data.votedparty === "BSP") {
+                party.innerHTML = (`
+                <span style="font-size: 20px;margin-left:7%;color: #05a3d2">You Have Voted To <span style="font-family: Stencil;color: #ED1B23">${data.votedparty}</span></span><br><br>
+                   <img src="img/BSP.png" height="200px" width="200px" style="margin-left: 30px">
+              `);
+                side.style.backgroundColor="#f7d4b2";
+                side.style.padding="8px";
+                side.style.borderRadius="8px";
+                side.innerHTML=(`
+                    <span style="font-family: 'Cambria Math';font-size: 19px;color: #0a53be;"> Your Valuable vote has been duly registered for<span style="color: tomato">&nbsp;Kumari Mayawati.</span></span>
+                    <div style="display: flex;align-items: center">
+
+                    <img src="img/mayawati.avif" height="185px" width="200px" style="border: 9px solid yellow;border-radius: 30px">
+                    <span style="margin-left: 7px; background-color: #76ebef;border:7px solid #8b67b5;border-radius: 20px;line-height: 20px;word-spacing: 3px;padding: 7px ">
+                    Mayawati, a stalwart BSP leader, is renowned for her dedication to social justice. Her tenure as Uttar Pradesh’s Chief Minister saw significant strides in infrastructure and upliftment of marginalized communities. She’s a symbol of empowerment for many.
+                    </span></div>
+              `);
+            } else if (data.votedparty === "AAP") {
+                party.innerHTML = (`
+                <span style="font-size: 20px;margin-left:7%;color: #05a3d2">You Have Voted To <span style="font-family: Stencil;color: #ED1B23">${data.votedparty}</span></span><br><br>
+                   <img src="img/AAP.png" height="200px" width="200px" style="margin-left: 30px">
+              `);
+                side.style.backgroundColor="#f7d4b2";
+                side.style.padding="8px";
+                side.style.borderRadius="8px";
+                side.innerHTML=(`
+                    <span style="font-family: 'Cambria Math';font-size: 19px;color: #0a53be;"> Your Valuable vote has been duly registered for<span style="color: tomato">&nbsp;Arvind Kejriwal.</span></span>
+                    <div style="display: flex;align-items: center">
+
+                    <img src="img/arvind.jpg" height="185px" width="200px" style="border: 9px solid yellow;border-radius: 30px">
+                    <span style="margin-left: 7px; background-color: #76ebef;border:7px solid #8b67b5;border-radius: 20px;line-height: 20px;word-spacing: 3px;padding: 7px ">
+                    Arvind Kejriwal, the AAP’s driving force, is celebrated for his commitment to anti-corruption and transparency. His innovative initiatives as Delhi’s Chief Minister, particularly in education and healthcare, have garnered widespread acclaim. He embodies the spirit of grassroots democracy.
+                    </span></div>
+              `);
+            } else if (data.votedparty === "NPP") {
+                party.innerHTML = (`
+                <span style="font-size: 20px;margin-left:7%;color: #05a3d2">You Have Voted To <span style="font-family: Stencil;color: #ED1B23">${data.votedparty}</span></span><br><br>
+                   <img src="img/NPP.png" height="200px" width="200px" style="margin-left: 30px">
+              `);
+                side.style.backgroundColor="#f7d4b2";
+                side.style.padding="8px";
+                side.style.borderRadius="8px";
+                side.innerHTML=(`
+                    <span style="font-family: 'Cambria Math';font-size: 19px;color: #0a53be;"> Your Valuable vote has been duly registered for<span style="color: tomato">&nbsp;Conrad Sangma.</span></span>
+                    <div style="display: flex;align-items: center">
+
+                    <img src="img/conrad.jpg" height="185px" width="200px" style="border: 9px solid yellow;border-radius: 30px">
+                    <span style="margin-left: 7px; background-color: #76ebef;border:7px solid #8b67b5;border-radius: 20px;line-height: 20px;word-spacing: 3px;padding: 7px ">
+                    Conrad Kongkal Sangma, a prominent NPP leader, is known for his progressive governance in Meghalaya. His focus on sustainable development and inclusive growth has made significant impacts. He’s a dynamic leader, bridging traditional values with modern governance.
+                    </span></div>
+              `);
+            }
+        }
+    });
+
+</script>
 </body>
 
 </html>

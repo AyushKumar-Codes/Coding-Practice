@@ -4268,7 +4268,7 @@ textarea.form-control-lg {
 }
 .card > .list-group:first-child {
   border-top-width: 0;
-  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-left-radius: cmalc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
 .card > .list-group:last-child {

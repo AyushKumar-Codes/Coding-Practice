@@ -1,0 +1,36 @@
+<div class="main">
+    <nav class="navbar navbar-expand px-3 border-bottom">
+        <button class="btn" id="sidebar-toggle" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0"><span
+                            id="username">&#64;Ayush!</span>
+                        <img src="assets/img/user.jpg" class="avatar img-fluid rounded" alt="">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a href="/dashboard" class="dropdown-item">Profile</a>
+                        <a href="/logout" class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Main -->
+    <main class="main-container">
+        <H1 style="margin-left:40%;color: #3dd5f3"> Password Change</H1>
+        <br>
+        <br>
+        <div style="margin-left: 37%;font-family: 'Noto Sans', sans-serif;font-size: 20px ">
+            Previous Password : <input type="password" id ="prevPass" ><br><br>
+            <span style="margin-left: 4.8%"> New Password : <input type="text" id ="password"></span><br><br>
+            <p style="color: #ED1B23;margin-left: 12%" id="err"> </p>
+            <button id="submit" onclick="del()" style="background-color: #3498db; color: white; border: none; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px; margin-left: 18%">Submit</button>
+
+        </div>
+    </main>
+</div>
