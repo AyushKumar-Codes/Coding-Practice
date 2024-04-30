@@ -1,5 +1,18 @@
-<div class="wrapper">
-  <app-sidebar></app-sidebar>
+<div *ngIf="router.url === '/'; else elseBlock">
   <router-outlet>
   </router-outlet>
+</div>
+<ng-template #elseBlock>
+  <div *ngIf="router.url === '/login'; else menu">
+    <router-outlet>
+    </router-outlet>
   </div>
+  <ng-template #menu>
+  <div class="wrapper">
+    <app-sidebar></app-sidebar>
+    <router-outlet>
+    </router-outlet>
+    </div>
+    </ng-template>
+</ng-template>
+

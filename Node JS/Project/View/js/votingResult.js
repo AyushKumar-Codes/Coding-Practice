@@ -22,15 +22,6 @@ socket.on("VotingResult", (data) => {
     BSP = Number(data.BSP);
     CPI =Number(data.CPI);
     NPP = Number(data.NPP);
-    let sidebarOpen = false;
-    const sidebar = document.getElementById('sidebar');
-
-    function openSidebar() {
-        if (!sidebarOpen) {
-            sidebar.classList.add('sidebar-responsive');
-            sidebarOpen = true;
-        }
-    }
 
     function closeSidebar() {
         if (sidebarOpen) {

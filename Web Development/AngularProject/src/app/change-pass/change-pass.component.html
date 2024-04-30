@@ -11,8 +11,8 @@
                         <img src="assets/img/user.jpg" class="avatar img-fluid rounded" alt="">
                     </a>
                     <div class="dropdown-menu dropdown-menu-end">
-                        <a href="/dashboard" class="dropdown-item">Profile</a>
-                        <a href="/logout" class="dropdown-item">Logout</a>
+                        <a routerLink="/dashboard" class="dropdown-item">Profile</a>
+                        <a routerLink="/login" class="dropdown-item">Logout</a>
                     </div>
                 </li>
             </ul>
@@ -29,7 +29,7 @@
             Previous Password : <input type="password" id ="prevPass" ><br><br>
             <span style="margin-left: 4.8%"> New Password : <input type="text" id ="password"></span><br><br>
             <p style="color: #ED1B23;margin-left: 12%" id="err"> </p>
-            <button id="submit" onclick="del()" style="background-color: #3498db; color: white; border: none; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px; margin-left: 18%">Submit</button>
+            <button id="submit"  style="background-color: #3498db; color: white; border: none; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px; margin-left: 18%">Submit</button>
 
         </div>
     </main>
