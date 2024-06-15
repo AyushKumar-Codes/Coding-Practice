@@ -1,1 +1,1 @@
-weqwrasd
+This is node.js Class

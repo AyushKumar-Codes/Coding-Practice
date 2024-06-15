@@ -1,0 +1,79 @@
+<!-- <div [ngStyle]="{'background-color':'yellow' , 'font-size':'500px'}">Ayush</div> -->
+
+<!-- *NGIF -->
+
+<!-- <button (click)="div()">Click</button>
+
+<div *ngIf="ayush then thenblock else elseblock" [ngStyle]="{'color' : 'yellow'}"></div>
+<ng-template #elseblock>
+  <div [ngStyle]="{'color' : 'Red'}">
+    This is false
+  </div>
+</ng-template>
+
+<ng-template #thenblock>
+  Ayush
+</ng-template> -->
+
+
+
+<!-- ngSwitch -->
+
+<!-- <div [ngSwitch]="t">
+  <div *ngSwitchCase="1">
+      This is 1
+  </div>
+  <div *ngSwitchCase="2">
+    This is 2
+</div>
+<div *ngSwitchCase="3">
+  This is 3
+</div>
+<div *ngSwitchCase="4">
+  This is 4
+</div>
+</div> -->
+
+
+<!-- [(ngModel)] Two way Data Binding-->
+
+<!-- Email : <input type="text" [(ngModel)]="email">
+<div [ngStyle]="{'color':'Red'}">{{email}}</div>
+
+<div (mouseenter)="color()" [ngStyle]= "{'color': reds? 'red' : 'blue'}">Male</div> <input type="radio" [(ngModel)] = "gender" value="male"> Female <input type="radio" [(ngModel)] = "gender" value="female"><br>
+
+Gender: {{gender}}
+<br>
+Bikes : <select [(ngModel)]="bike">
+  <option value="Yamaha">Yamaha</option>
+  <option value="Honda">Honda</option>
+  <option value="Hero">Hero</option>
+</select>
+Bike Purchased = {{bike}} -->
+
+
+
+<!-- <form #loginForm="ngForm" (ngSubmit)="myForm()">
+  Email : <input type="text" name="email" [(ngModel)]="email" required email>
+  <span *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].touched">
+    This field is not valid
+  </span><br>
+
+  Password:<input type="password" name="password" [(ngModel)]="password" minlength="5">
+  <span *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">
+    This field is too short
+  </span><br>
+
+  <button type="submit" [disabled]="loginForm.invalid">Submit</button>
+</form> -->
+
+<!-- <ul>
+  <li *ngFor="let u of user">
+    {{u.id}} {{u.title}}
+  </li>
+</ul> -->
+<div class="container">
+<div class="inner">hello</div>
+<div class="inner">bye</div>
+<div class="inner">ayush</div>
+</div>

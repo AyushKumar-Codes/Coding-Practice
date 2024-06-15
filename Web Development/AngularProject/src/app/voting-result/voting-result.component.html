@@ -74,13 +74,30 @@
 
         </div>
 
-        <div class="charts" style="margin-left: 10%">
+        <!-- <div class="charts" style="margin-left: 10%"> -->
 
-            <div class="charts-card" style="width: 130%; margin-left: 12%">
-                <h2 class="chart-title">Result of the Voting</h2>
-                <div id="bar-chart" style="margin-left: 12%"></div>
-            </div>
+            <div class="charts-card" style="width: 80%; margin-left: 10%;">
+                <apx-chart
+            [series]="chartOptions.series"
+            [chart]="chartOptions.chart"
+            [xaxis]="chartOptions.xaxis"
+        [title]="chartOptions.title"
+        [fill]="chartOptions.fill"
+        [yaxis]="chartOptions.yaxis"
+        [dataLabels]="chartOptions.dataLabels"
+        [grid]="chartOptions.grid"
+        [tooltip]="chartOptions.tooltip"
+        [colors]="chartOptions.colors"
+        [plotOptions]="chartOptions.plotOptions"
+        [legend]="chartOptions.legend"
+        [stroke]="chartOptions.stroke"
+        ></apx-chart>
+                </div>     
+                
+                
+            
+        <!-- </div> -->
 
-        </div>
+
     </main>
     </div>

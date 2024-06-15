@@ -6,7 +6,7 @@ const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'postgres',
-    password:'root',
+    password:'Ayush@123',
     port: 5432,
 });
 app.use(express.json());
@@ -16,7 +16,7 @@ app.get('/todos', (req, res) => {
             console.log('Error fetching todos', error);
             res.status(500).json({error: 'Internal Server error'});
         } else {
-            res.json(resul.rows);
+            res.json(result.rows);
         }
 
     });

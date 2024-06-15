@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Paragraph Example</title>
+  <style>
+    #Para{
+      display: none;
+    }
+    div{
+          justify-content: center;
+          text-align: center;
+        }
+        </style>
+</head>
+<body>
+  <div>
+    <p id="Para">This is ETP of Front END Development </p>
+    <button id="btn">Toggle Paragraph</button>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#btn").click(function() {
+        $("#Para").toggle();
+      });
+    });
+  </script>
+</body>
+</html>

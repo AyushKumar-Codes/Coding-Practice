@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 const express = require("express");
+// import express from "express";
 const app = express();
 const bodyParser = require("body-parser");
 const path = require("path");
-const fs = require("fs");
 const publicPath = path.join(__dirname, 'LearningMongoDB');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(publicPath));

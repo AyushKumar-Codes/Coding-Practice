@@ -1,0 +1,82 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-12">
+            <div class="panel">
+                <div class="panel-heading">
+                    <!-- <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                        <div class="col-sm-2">
+                            <a routerLink="/add-student" class="btn btn-sm btn-primary pull-left">Add New Student </a>
+                        </div>
+                        </div>
+                    </div> -->
+                
+                    <!-- <div class= "container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <form  [formGroup]="studentForm" (ngSubmit)="submitForm()">
+                                    <div class="form-group">
+                                        <label for="Sname">Student Name</label>
+                                        <input type="text" formControlName="Sname" class="form-control">
+                                        <div *ngIf="studentForm.get('Sname').invalid && (studentForm.get('Sname').dirty || studentForm.get('Sname').touched)" class="alert alert-danger">
+                                            <div *ngIf="studentForm.get('Sname').errors.required" >Name is required.</div>
+                                            <div *ngIf="studentForm.get('Sname').errors.minlength" >Name should be 5 character.</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Sroll" class="form-label">Roll no</label>
+                                        <input type="text"  class="form-control"  id="Sroll" formControlName="Sroll">
+                                        <div *ngIf="studentForm.get('Sroll').touched && studentForm.get('Sroll').invalid" class="alert alert-danger">
+                                            <div *ngIf="studentForm.get('Sroll').errors.required">Roll no is required.</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Sclass" class="form-label">Class</label>
+                                        <input type="text"  class="form-control"  id="Sclass" formControlName="Sclass">
+                                        <div *ngIf="studentForm.get('Sclass').touched && studentForm.get('Sclass').invalid" class="alert alert-danger">
+                                            <div *ngIf="studentForm.get('Sclass').errors.required">Class is required.</div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" style="margin-right:20px" [disabled]="studentForm.invalid">Add</button>
+                                    <button type="reset" class="btn btn-danger">Clear</button>
+                                </form>
+                            </div>
+                        </div> -->
+                        <div class="panel-body table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <!-- <th>Action</th> -->
+                                        <th>S.no.</th> 
+                                        <th>Student Name</th>
+                                        <th>Roll no</th>
+                                        <th>Class</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let data of studentList; let i = index">
+                                    <!-- <td>
+                                        <ul class="action-list">  -->
+                                            <!-- <ul class="action-list">
+                                                <li><a routerLink="/domain-update/{{data.id}}">
+                                                <button class="btn btn-primary" style="margin-right:10px" (click)="newDomainUpdate(data.id)">Update</button></a></li>
+                                                <li><button class="btn btn-danger"  (click)="newDomainDelete(data.id)">Delete</button></li>
+                                              </ul> -->
+                                          <!-- <li><a routerLink="/student-details/{{data.id}}"> -->
+                                          <!-- <li><button class="btn btn-primary" style="margin-right:10px" (click)="updateStudent(i)">Update</button></li>
+                                          <li><button class="btn btn-danger"  (click)="deleteStudent(i)">Delete</button></li> -->
+                                        <!-- </ul>
+                                    </td> -->
+                                    <td scope="row">{{i+1}}</td>
+                                    <td>{{ data.Sname }}</td>
+                                    <td>{{ data.Sroll }}</td>
+                                    <td>{{data.Sclass}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <app-modal [data]="selectedStudent" (update)="updateStudent($event)"></app-modal> -->

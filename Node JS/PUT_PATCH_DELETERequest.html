@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Different Request</title>
+</head>
+<body>
+    <form action="/?_method=Patch" method = "POST">
+        Name: <input name="name" type="text">
+        Age : <input type="number" name="age">
+        <button type="submit">PUT</button>
+    </form>
+<br>
+    <form action="/?_method=Patch" method = "POST">
+        Name: <input name="name" type="text">
+        Age : <input type="number" name="age">
+        <button type="submit">Patch</button>
+    </form>
+<br>
+    <form action="/?_method=delete" method = "POST">
+        Name: <input name="name" type="text">
+        Age : <input type="number" name="age">
+        <button type="submit">Delete</button>
+    </form>
+</body>
+</html>

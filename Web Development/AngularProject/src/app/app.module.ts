@@ -7,11 +7,11 @@ import { DashboardMainComponent } from './dashboard-main/dashboard-main.componen
 import {RouterModule, Routes} from "@angular/router";
 import { CastvoteComponent } from './castvote/castvote.component';
 import { DeleteAccComponent } from './delete-acc/delete-acc.component';
-import { ChangePassComponent } from './change-pass/change-pass.component';
+import { ChangePassComponent } from './change-pass/change-pass.component'; 
 import { VotingResultComponent } from './voting-result/voting-result.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-
+import { NgApexchartsModule } from "ng-apexcharts";
 const  appRoutes: Routes = [
     {path : 'dashboard' , component : DashboardMainComponent},
     {path:"castvote",component:CastvoteComponent},
@@ -36,7 +36,8 @@ const  appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NgApexchartsModule
   ],
   providers: [
     provideClientHydration()

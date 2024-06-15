@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ETP1</title>
+</head>
+<body>
+    Enter Message : <input id="msg" type="text"><br>
+    <button id="submit">submit</button>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+    const submit = document.getElementById('submit');
+    submit.addEventListener("click", submitMsg);
+    function submitMsg (){
+        var msg = document.getElementById('msg').value;
+        socket.emit("msg" , msg);
+    }
+</script>
+</html>

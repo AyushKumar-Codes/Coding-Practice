@@ -5,40 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ca5b634-a318-4197-b4b7-c9bc85843eef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Java/src/ArmstrongNumberCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/src/FibonnaciNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/src/Functions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/src/GCD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/src/PalindromeCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/src/PrimeFactorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/src/PrimeNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/src/StrToIntConvertor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/src/String_Reverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/src/factorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Node JS/Compression gxip unzip brotli .js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Node JS/Json Stringify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Node JS/ReadStream.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Node JS/duplexStream.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Node JS/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Node JS/module installation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Node JS/pipestream.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Node JS/writebuffer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Node JS/writerStream.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C++/Circular_Linkedlist.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C++/tempCodeRunnerFile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/tempCodeRunnerFile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C++/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C++/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/test.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HTML/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../HTML/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3input.py" beforeDir="false" afterPath="$PROJECT_DIR$/3input.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/src/FilehandelingFindingAverage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/src/TreeSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++/Binary_Search_Tree_Creation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/Binary_Search_Tree_Creation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/log.text" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/log.text" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AppendToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/AppendToFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/,/CpFile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/LearningExpress.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Node JS/LearningExpress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/LearningMongoDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Node JS/LearningMongoDB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/MongoDbURL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/PostgreSQLDataBaseManagement.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Node JS/PostgreSQLDataBaseManagement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/Project.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/duplexStream.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Node JS/duplexStream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Node JS/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/module installation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/mongodb Connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Node JS/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Node JS/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Node JS/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/pipestream.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Node JS/pipestream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/student.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Node JS/student.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Node JS/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Node JS/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Node JS/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hierarchical.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hierarchical.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development/AngularProject/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Web Development/AngularProject/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development/AngularProject/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Web Development/AngularProject/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development/AngularProject/src/app/voting-result/voting-result.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Web Development/AngularProject/src/app/voting-result/voting-result.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development/AngularProject/src/app/voting-result/voting-result.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Web Development/AngularProject/src/app/voting-result/voting-result.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development/AngularProject/src/assets/votingResult.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development/Class6(JavaScript Array and for loops).html" beforeDir="false" afterPath="$PROJECT_DIR$/../Web Development/Class6(JavaScript Array and for loops).html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development/class14(Bootstrap Table).html" beforeDir="false" afterPath="$PROJECT_DIR$/../Web Development/class14(Bootstrap Table).html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +66,7 @@
   &quot;keyToString&quot;: {
     &quot;Python.1 digit before decimal.executor&quot;: &quot;Run&quot;,
     &quot;Python.2_Expressions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Data_loader.executor&quot;: &quot;Run&quot;,
     &quot;Python.Test.executor&quot;: &quot;Run&quot;,
     &quot;Python.fibonacci Series.executor&quot;: &quot;Run&quot;,
     &quot;Python.replace function.executor&quot;: &quot;Run&quot;,
@@ -87,7 +87,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.Test">
+  <component name="RunManager" selected="Python.Data_loader">
     <configuration name="1 digit before decimal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
@@ -111,7 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2_Expressions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Data_loader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,7 +125,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_Expressions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_loader.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,18 +205,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Data_loader" />
         <item itemvalue="Python.Test" />
         <item itemvalue="Python.1 digit before decimal" />
         <item itemvalue="Python.fibonacci Series" />
         <item itemvalue="Python.replace function" />
-        <item itemvalue="Python.2_Expressions" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-249ae16d76d6-a618e4d4" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -242,6 +243,8 @@
       <workItem from="1706070676638" duration="87000" />
       <workItem from="1706118828519" duration="7000" />
       <workItem from="1707466412754" duration="6000" />
+      <workItem from="1716282694903" duration="2171000" />
+      <workItem from="1716310361150" duration="35000" />
     </task>
     <servers />
   </component>
@@ -260,10 +263,11 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python$2_Expressions.coverage" NAME="2_Expressions Coverage Results" MODIFIED="1703173600751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$Test.coverage" NAME="Test Coverage Results" MODIFIED="1706070691861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$replace_function.coverage" NAME="replace function Coverage Results" MODIFIED="1703219574894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$1_digit_before_decimal.coverage" NAME="1 digit before decimal Coverage Results" MODIFIED="1705385029827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$fibonacci_Series.coverage" NAME="fibonacci Series Coverage Results" MODIFIED="1703665439847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$Test.coverage" NAME="Test Coverage Results" MODIFIED="1706070691861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$replace_function.coverage" NAME="replace function Coverage Results" MODIFIED="1703219574894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$Data_loader.coverage" NAME="Data_loader Coverage Results" MODIFIED="1716284616034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$2_Expressions.coverage" NAME="2_Expressions Coverage Results" MODIFIED="1703173600751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

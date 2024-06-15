@@ -11,13 +11,13 @@ public class AppendToFile {
             BufferedWriter bw = new BufferedWriter(fw);
             String s = sc.nextLine();
             bw.write(s);
-
             BufferedReader br = new BufferedReader(new FileReader(f));
             String line;
             while ((line = br.readLine()) != null) {
                 System.out.println(line);
             }
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             System.out.println("File does not exist");
         }
     }

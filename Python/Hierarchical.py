@@ -7,7 +7,7 @@ class Parent:
 
 # Derived class1
 class Child1(Parent):
-	def func2(self):
+	def func2(self):s
 		print("This function is in child 1.")
 
 # Derivied class2

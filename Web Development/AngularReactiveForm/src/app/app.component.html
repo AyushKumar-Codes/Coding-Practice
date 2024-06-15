@@ -1,0 +1,6 @@
+<form [formGroup]="loginForm" (ngSubmit)="validator()"><br>
+  Email : <input type="email" formControlName="email" [(ngModel)]="ema">
+  <span *ngIf="emailv && emailv.touched && emailv.invalid">This field is not valid</span><br>
+  Password <input type="password" formControlName="password">
+  <button type="submit" [disabled]="loginForm.invalid">Submit</button>
+</form>

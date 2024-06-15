@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Server Reply</title>
+</head>
+<body>
+<p id="server"></p>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+    const reply = document.getElementById("server");
+    // socket.emit("ServerReply");
+    const interval = setInterval(()=>{
+        setInterval(socket.emit("clientReply","WowServer"),2000);
+    },5000)
+    socket.on("ServerReply",(data)=>{
+        reply.innerHTML += (`${data} <br>`);
+    });
+</script>
+</body>
+</html>

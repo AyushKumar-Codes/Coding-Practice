@@ -10,8 +10,8 @@
         let arr = [1,32,3,5,6];
         let arr1 = new Array();
         arr1.push(1);arr1.push(2);arr1.push(3)
-        arr.forEach(e=>{
-            document.write(e);
+        arr.forEach(function (e,i){
+            document.write(e+" is at "+i+" ");
         });
         document.write("<br>");
         arr1.forEach(e=>{
@@ -22,7 +22,7 @@
             document.write(arr[i]);
         }
         document.write("<br>");
-        for(let j of arr1){
+        for( j of arr1){
             document.write(j);
         }
     </script>

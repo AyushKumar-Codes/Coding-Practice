@@ -34,7 +34,7 @@ const express = require("express");
 const fs = require("fs");
 const users = require("./MOCK_DATA.json");//This will make array of json entries
 const bodyParser = require("body-parser");
-const {json} = require("express");
+// const {json} = require("express");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/",(req,res)=>{
@@ -111,7 +111,7 @@ app.post("/update/:n",(req,res)=> {// here we can use app.patch for updating the
                 console.log(err);
             }
             else{
-                res.send("User Deleted");
+                res.send("User Updated");
             }
         });
     }
